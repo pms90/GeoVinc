@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html class="no-touch" lang="es">
+<meta charset="UTF-8">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title>GeoVin</title>
+
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///8AhMIAgcFho9AAe74Af8AAgsEAfb8Aer5qrNXg7vYAeL3P5fLC3O0AhcPs9fqDuNstkci72OvZ6vT0+v2jyeOz0+g8lsrK4O99ttmrzuWQv95WotBgotBHm80ijcZ1sNeYw+CGvd0Ab7muWc9uAAAGNElEQVR4nO2dbXejKhCAhcCAmpgY855sNHf//3+8os1u02BrWplRluf0Q3v6heeAvA5DFAUCgUAgEAgEAoFAIBAYloS6AM7ZXahL4JhdJo7UZXDLhTPxH3UhXJJkwJi6bqjL4Q7BDJwvqAviiqVuDBmIfEddlkHZxYvl0vxykuwNSM/UpRqQZcqV0LP6t5L9Rc+pyzUciTJGan/b83eGTMR1vfrR5+yhbZgS2ANcXJguqEs3ADPFugBgcCp2E+9Zj6JTsK1Zka6oy/gjtvpTwdYyL4rJzsjXPQTN+CjS2TQ7nULD134tXE7xc0x4b8G6ItVxco6b7AVBU43pjbrIL5Lzr60eEatoc8v3S+qS9+Qqv1b6iNSpAr2mLno/4m8IvtXkgbrsvVh9PtJ/hpqEYZ+RvrMOp7DsWKffr8FJzOLm4rVx4h2QTGG5sVTfFmQsG4PhfD4vkgfmfzgsFosXR/pHOFDrRdEiFd2o+ucHfvV3OIK52+1nCl8gqfVqzt8ey3sZjqArPb4833wFyOgnbW4NGejKc0PGUuppm3NDVhJv28TODUFvPTesR8X4RLgOxjBkXHG6A3EUQ7NZvD+evDY0jjr227BG7immqZiGdbc689yw7nOyM/aOP7IhA5UjK2IbmmrEHRzxDbEVCQwZz303ZBKzSyUxZAoxAofGkGm8JRWRIeJMnMgQ8TyDypCjTcOpDPH2GWc0hlCizd1+0RimeEc2NHWIOR6SGEKJJ0hjiBpxS2EoUe8wUBgq1F1wEkNMQQpD5N3hYOgAwA1foPgOBepuG8logXrHhsIQmO+GuCGZNPNSjfgl0qwtZOW7IUO8QUxkiKhIZcjUtTm9KJx/kWSGjOu4mJ9j59cy6Azr/iZXUjo/paE0bBCuj9rIDaX3hsp7Q+E6AoXcULoeGMkNeeW9oetDqGAYDH9u+CsYTt7QdWwNuaHzi8LUhtJ5xAKxIcJZKbEhQk4bWkOMs1JaQ4zzfFJDjRG7T2nIrwiCpIYC5Tyf0BBpa5/QEOmglM4QKzqRzBCcb5RSG2qsjJlUhngXEogMeYZ2CkxjiHkxiMSQY95fI4k2kZghQxSGuBnOCAzRxgkqQ4WcyB3fMMMVxDdU2IkH0A059l1ubENAvSFLYYifAgS9lWJelwmGTsB/8wPZUKBsINIZckGQMgrREMSFIl0UniFXNPn3sAxBk1QgmiGIkizPJ4YhSE6YL9m9ISh1pEzM7tiQK82I8rRhGALXlx15Xn1nhiB1dhlDunJHhkrn25E8xuLEUJU38sb5h4ENgUslylE93jGcIYBUGi7n9Uha5x2boXzlSZk3PSnguhqbXIPFMD/NrmX/NN/AORdwHqNcw7Nhu1e07vNoB3AlRHap4jG/gPhsCO2m9OdPIoDpUtJsdluMp9PswNJK20o8gDCf46On+ct0KCq7VtvDNF7mshjCtV3pLComBFO87iSFUErVTTJTSpoOZRpuLba+1Nxg3RxM80uSaFddy22SFOttdSum+IyjzdB8iMlWVNRlGwaLYZvUYePLs9s2w2ZBdyxXfijaDNtpZZaWYx7memMbLarmP8tK4W9QO8DW06i3s4XEi6fTrWuL24n+8ZTBsBnC/rCSXnyDBmsdwjG6/PblsW37ClgvouMIHjIahI41vtiOfs3Ql65dDPnbF8UuQ/BiLDR0GeLcZ8Ggs5X60pV2GhId2Dqgy1CM4fXJQegyxMyo5pYuw5S6YINhNZS+G8pzqdGDJJ1h3WsrIl8mNJHdMPWmlzHYDNEDJJ1i26eheQHOFRZDf6YzDTZDP/ZJ79gMvZl0N9h2hE2Ya5JTv3I7FJYT0ub9kEOKfXvHFZY6bCOVS19mNU+G936m8GVU/Gj4NzEV+rUBR3w0BLhP2XyZmj61UtFs5yeVv7v67dnaTSO+bueWJ0NoYrJjjvdsmGNs42EVJWkmva1DU4u1XOZLFVrXh9yrRb51fZiPP1qtPzbD2WHvkWGstJAfwhB5SnCJzh2b5WGbf4iXdZ5jG5/4MV7Wl0n3e+L3tai8aqR33jVUiZo+Bo+LvA+GsUcd6QMXM26AvvoyW3tmIxgo7s2iyUal5dbPL/BOMqLrWIFAIBAIBAKBQCAQCPzz/A+/9GPoj9naRAAAAABJRU5ErkJggg==">
+
+<link
+  href="https://fonts.googleapis.com/css?family=Open+Sans"
+  rel="stylesheet"
+/>
+<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+<link
+  href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+  rel="stylesheet"
+/>
+
+
+<style>
+
+  #mapdiv { height: 280px; }
+
+  body, html {
+    /* #f7f7f7 */
+    background: #ffffff;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.5em;
+    font-size: 96%;
+    line-height: 1.2;
+    text-align:center;
+  }
+
+
+  #titulo {font-size: 180%;}
+
+  .btn {
+    display: "block";
+    /* height: 100px; */
+    /* width:90%; */
+    /* border: none; */
+    /* outline: none; */
+    padding: 8px 15px;
+    /* background-color: #e6e6e6; */
+    cursor: pointer;
+    margin: 0px 1px 2px 1px; /* top right bottom left */
+    /* font-size: 150%; */
+    cursor: pointer;
+    /* box-shadow: 0px 0px 0px 8px rgba(234, 234, 234); */
+  }
+  .btn:hover {
+    /* background-color: #ddd; */
+    cursor: pointer;
+  }
+  .btn.active {
+    /* background-color: #161616; */
+    color: white;
+  }
+
+
+  /* segundo mapa */
+
+  #map {
+    height: 480px;
+  }
+  .marker {
+    background-image: url('clip.jpg');
+    background-size: cover;
+    width: 0px;
+    height: 0px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  .mapboxgl-popup {
+    max-width: 600px;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  #map0 { height: 480px; display: block; }
+
+  #btn_volver { display: none; }
+
+  #arba{
+    /* max-height:500px; */
+    width:100%;
+  }
+
+  #button{
+    max-height:500px;
+    width=auto;
+  }
+
+</style>
+
+</head>
+<body>
+
+  <!-- imagen de portada: -->
+  <!-- <img src='index.png' id='arba'> -->
+
+<div id='button'>
+<br>
+<br>
+
+<div id="titulo"> <a><b> GeoVin</b></a> </div>
+
+<br>
+<div id="bloque1">
+<div id="sub"> <a> Encontrá el punto de la red Geoba más cercano y el tiempo necesario para su vinculación. </a> </div>
+
+<br>
+<br>
+
+<a><b>Objetivo de vinculación: </b></a>
+<form method="post">
+    <select id="dropdown" name="dropdown" onchange="changeHiddenInput(this)" >
+        <option value="geoba_gps" >Estación Permanente</option>
+        <option value="geoba_all">Cualquier punto de la Red</option>
+    </select>
+    <input type="hidden" name="hiddenInput" id="hiddenInput" value="" />
+    <!-- <button onclick="changeHiddenInput (objDropDown)">Try it</button> -->
+</form>
+
+<div id="result"> </div>
+
+<script>
+// var select;
+// window.onload = function () {
+//     select = document.getElementById('dropdown');
+//     console.log(select);
+// }
+// var puntos = "geoba_gps"
+// function changeHiddenInput(objDropDown) {
+//     console.log(objDropDown);
+//     var objHidden = document.getElementById("hiddenInput");
+//     objHidden.value = objDropDown.value;
+//     puntos = objHidden.value;   // antes: var puntos = objHidden.value;
+//     // result.innerHTML = puntos || "";  // mostrar seleccion elegida en un elemento con id = "result"
+// }
+</script>
+<br>
+<br>
+
+<a><b>Coordenadas del punto a vincular: </b></a>
+<form method="post">
+    <select id="dropdown2" name="dropdown2" onchange="changeHiddenInput2(this)" >
+        <option value="coor_mapa">Elegir coordenas en mapa</option>
+        <option value="coor_disp" >Usar coordenas de este dispositivo</option>
+    </select>
+    <input type="hidden" name="hiddenInput2" id="hiddenInput2" value="" />
+    <!-- <button onclick="changeHiddenInput (objDropDown)">Try it</button> -->
+</form>
+
+<div id="result2"></div>
+
+<!-- <script>
+var select2;
+window.onload = function () {
+    select2 = document.getElementById('dropdown2');
+    console.log(select2);
+}
+var coor = "coor_mapa"
+function changeHiddenInput2(objDropDown2) {
+    console.log(objDropDown2);
+    var objHidden2 = document.getElementById("hiddenInput2");
+    objHidden2.value = objDropDown2.value;
+    coor = objHidden2.value;   // antes: var puntos = objHidden.value;
+    // result2.innerHTML = coor+'coor';  // mostrar seleccion elegida en un elemento con id = "result"
+
+    var x = document.getElementById("map0");
+    if (coor === "coor_mapa") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+
+    lat =  position.coords.latitude;
+    lon =  position.coords.longitude;
+
+
+}
+</script> -->
+
+
+</div>
+
+<div id="coor_bus_y_map0">
+
+<br>
+<br>
+
+<div id="coor_elegida"><b>Cliqueá en el mapa para obtener coordenada </b><br><br></div>
+
+<div id="bus_y_map0">
+<br>
+<br>
+
+<button class='btn' id='buscar_btn' onclick="showPosition()"><b> Buscar </b></button>
+
+<br>
+<br>
+
+<div id="map0"></div>
+
+</div>
+</div>
+
+<!-- <script>
+mapboxgl.accessToken = 'pk.eyJ1IjoicGFibG8xMjMzMjEiLCJhIjoiY2t4bnU2YnI5MGU3bjJ2cXV1YmhrbHA3cyJ9.-5XwO7zn-tEsWckebwkFgQ';
+const monument = [-59.897656425749375, -36.6795000688034];
+const map0 = new mapboxgl.Map({
+container: 'map0',
+style: 'mapbox://styles/mapbox/light-v10',
+center: monument,
+zoom: 5
+});
+map0.on('click', function(e) {
+    // The event object (e) contains information like the
+    // coordinates of the point on the map that was clicked.
+    console.log('A click event has occurred at ' + e.lngLat);
+    console.log('Lat ' + e.lngLat.lat);
+    var lon_mapa = e.lngLat.lng
+    var lat_mapa = e.lngLat.lat
+    coor_elegida.innerHTML = 'Coordenada elegida: <br><br> ( ' + lon_mapa + ' , ' + lat_mapa +' )';
+});
+</script> -->
+
+
+<!-- <img src='ramsac.png' width=90%> -->
+</div>
+
+<div id='resultado'>
+
+<p id="datos_estacion"></p>
+
+<br>
+
+
+<center><button class='btn' id='btn_volver' onclick="window.location.href = 'file:///C:/Users/bikel/Desktop/vinc-main/index.html';">Hacer otra busqueda</button></center>
+
+<br>
+
+<div id="map"></div>
+
+<br>
+<br>
+
+</div>
+
+
+<div>
+
+  <p><center>Copyright © 2022 Pablo Manera (CC BY 4.0) </c></p>
+  <p><center>pablo.manera@gmail.com</center></p>
+</div>
+
+<!-- <div id="mapdiv"></div> -->
+
+<!-- <script>
+// Ocultar divs
+function hide() {
+  var d = document.getElementById("button");
+  if (d.style.display === "none") {
+    d.style.display = "block";
+  } else {
+    d.style.display = "none";
+  }
+}
+</script> -->
+<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+<script>
+var select;
+window.onload = function () {
+    select = document.getElementById('dropdown');
+    console.log(select);
+}
+var puntos = "geoba_gps"
+function changeHiddenInput(objDropDown) {
+    console.log(objDropDown);
+    var objHidden = document.getElementById("hiddenInput");
+    objHidden.value = objDropDown.value;
+    puntos = objHidden.value;   // antes: var puntos = objHidden.value;
+    console.log(puntos)
+    // result.innerHTML = puntos || "";  // mostrar seleccion elegida en un elemento con id = "result"
+}
+var lon_mapa = ''
+var lat_mapa = ''
+mapboxgl.accessToken = 'pk.eyJ1IjoicGFibG8xMjMzMjEiLCJhIjoiY2t4bnU2YnI5MGU3bjJ2cXV1YmhrbHA3cyJ9.-5XwO7zn-tEsWckebwkFgQ';
+const monument = [-59.897656425749375, -36.6795000688034];
+const map0 = new mapboxgl.Map({
+container: 'map0',
+style: 'mapbox://styles/mapbox/streets-v11',
+// streets-v11  navigation-day-v1 light-v10 outdoors-v11
+center: monument,
+zoom: 5
+});
+
+var marker2 = new mapboxgl.Marker({ color: 'black', rotation: 0 })
+
+map0.on('click', function(e) {
+    // The event object (e) contains information like the
+    // coordinates of the point on the map that was clicked.
+    console.log('A click event has occurred at ' + e.lngLat);
+    console.log('Lat ' + e.lngLat.lat);
+    lon_mapa = e.lngLat.lng
+    lat_mapa = e.lngLat.lat
+    coor_elegida.innerHTML = '<b>Coordenadas elegidas: </b><br> ( ' + lon_mapa + ' , ' + lat_mapa +' )';
+    // new mapboxgl.Popup()
+    // .setLngLat(e.lngLat)
+    // .setHTML(e.lngLat)
+    // .addTo(map0);
+
+    // marker2.remove();
+    marker2.setLngLat([lon_mapa, lat_mapa])
+    marker2.addTo(map0);
+
+});
+var lat = 0 ;
+var lon = 0 ;
+var xx = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    xx.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+// var lat_dis = ''
+// var lon_dis = ''
+var select2;
+window.onload = function () {
+    select2 = document.getElementById('dropdown2');
+    console.log(select2);
+}
+var coor = "coor_mapa"
+function changeHiddenInput2(objDropDown2) {
+    console.log(objDropDown2);
+    var objHidden2 = document.getElementById("hiddenInput2");
+    objHidden2.value = objDropDown2.value;
+    coor = objHidden2.value;   // antes: var puntos = objHidden.value;
+    // result2.innerHTML = coor+'coor';  // mostrar seleccion elegida en un elemento con id = "result"
+
+    var x = document.getElementById("map0");
+    if (coor === "coor_mapa") {
+      // x.style.display = "block";
+      // document.getElementById("resultado").style.display = "none";
+      document.getElementById("coor_bus_y_map0").style.display = "block";
+      window.location.reload();
+    } else {
+      // x.style.display = "none";
+      document.getElementById("coor_bus_y_map0").style.display = "none";
+      // document.getElementById("resultado").style.display = "none";
+      getLocation();
+    }
+}
+
+
+
+function showPosition(position) {
+  if(lon_mapa=='' && coor === "coor_mapa"){
+    coor_elegida.innerHTML = '<b style="color:red">Cliqueá en el mapa para obtener coordenada </b><br><br>'
+  }else{
+    if (puntos=='geoba_gps'){
+      console.log(puntos+'-------------------------')
+      estaciones = [['3ARO','38','22','55.4762','S','60','16','27.2968','W','137.479','-','Tres-Arroyos','Est.-Permanente'],
+      ['AGGO','34','52','25.3491','S','58','8','23.4831','W','39.685','-','La-Plata','Est.-Permanente'],
+      ['AZUL','36','46','1.2800','S','59','52','52.6087','W','158.313','-','-','Est.-Permanente'],
+      ['BCAR','37','45','40.4408','S','58','18','3.9423','W','150.394','-','-','Est.-Permanente'],
+      ['DORE','36','18','54.3626','S','57','40','51.5848','W','34.065','-','Dolores','Est.-Permanente'],
+      ['GVIL','35','1','57.3609','S','63','0','49.1131','W','148.627','-','-','Est.-Permanente'],
+      ['IGM1','34','34','20.0773','S','58','26','21.5496','W','50.694','3557-7-3','Ciudad-de-Bs.-As.','Est.-Permanente'],
+      ['LPGS','34','54','24.2824','S','57','55','56.2783','W','29.875','3557-14-3','La-Plata','Est.-Permanente'],
+      ['MPL2','38','0','20.7624','S','57','34','16.6703','W','53.592','3957-2-2','Mar-del-Plata','Est.-Permanente'],
+      ['NESA','40','6','19.4151','S','64','27','14.4171','W','83.111','-','-','Est.-Permanente'],
+      ['PATA','40','47','48.1213','S','62','59','21.7822','W','61.155','-','Carmen-de-Patagones','Est.-Permanente'],
+      ['PEBA','33','56','44.9328','S','60','33','44.8923','W','94.414','-','Pergamino','Est.-Permanente'],
+      ['PEJO','35','48','22.7686','S','61','53','40.6991','W','110.152','-','-','Est.-Permanente'],
+      ['RUFI','34','15','46.4002','S','62','43','34.2015','W','148.693','-','Santa-Fe','Est.-Permanente'],
+      ['SRLP','36','37','17.3980','S','64','16','49.4568','W','223.848','-','-','Est.-Permanente'],
+      ['SUAR','37','27','30.5999','S','61','55','52.6512','W','264.038','-','-','Est.-Permanente'],
+      ['UNRO','32','57','33.6706','S','60','37','42.3308','W','66.872','-','-','Est.-Permanente'],
+      ['VBCA','38','42','2.7655','S','62','16','9.2176','W','59.479','-','Bahia-Blanca','Est.-Permanente'],
+      ['VCON','33','13','41.0261','S','60','19','47.7617','W','62.297','-','Villa-Constitucion-(Santa-Fe)-','Est.-Permanente']] ;
+    }else{
+      estaciones = [[',25M1','35','23','59.9561','S','60','7','23.8813','W','67.136','3560-27-2','25-de-mayo','-,'],
+      [',25MA','35','24','51.5846','S','60','8','30.2867','W','68.521','3560-27-2','25-de-mayo','-,'],
+      [',9JU1','35','25','49.9151','S','60','47','56.3930','W','88.054','3560-26-1','9-de-Julio','-,'],
+      [',9JUL','35','24','23.8072','S','60','46','20.7991','W','85.225','3560-26-1','9-de-Julio','-,'],
+      [',3ARO','38','22','55.4762','S','60','16','27.2968','W','137.479','-','Tres-Arroyos','Est.-Permanente,'],
+      [',ABMO','38','1','40.0392','S','63','50','23.1258','W','190.502','3963-2-1','Abramo---Prov.-La-Pampa','-,'],
+      [',ACEV','33','46','53.1363','S','60','21','15.4260','W','72.518','3360-33-1','Acevedo','-,'],
+      [',AGGO','34','52','25.3491','S','58','8','23.4831','W','39.685','-','La-Plata','Est.-Permanente,'],
+      [',AGOS','37','52','31.0258','S','62','53','8.2918','W','256.636','3763-34-3','17-de-Agosto','-,'],
+      [',AGUS','34','25','55.0390','S','61','4','30.9596','W','108.440','3560-7-2','Fortin-Tiburcio','-,'],
+      [',ALSI','37','18','24.3856','S','62','49','12.5884','W','181.661','3763-22-3','Adolfo-alsina','-,'],
+      [',AME1','34','50','1.8235','S','62','23','48.8811','W','137.361','3563-17-3','Ameghino','-,'],
+      [',AMEG','34','51','7.5500','S','62','28','20.7457','W','126.843','3563-17-3','Ameghino','-,'],
+      [',AMER','35','26','17.7383','S','62','59','13.7966','W','123.663','3563-28-1','America-Rivadavia','-,'],
+      [',ANDA','36','34','55.2234','S','62','7','2.9440','W','135.925','3763-11-4','Andant','-,'],
+      [',ANUM','37','43','56.5669','S','59','4','21.2987','W','228.640','3760-35-2','Almacen-la-Numancia','-,'],
+      [',ARE1','34','18','9.2450','S','61','25','31.2568','W','104.951','3560-1-3','General-Arenales','-,'],
+      [',AREN','34','18','15.5002','S','61','19','43.6617','W','109.407','3560-1-3','General-Arenales','-,'],
+      [',ARR0','34','3','7.8905','S','60','2','9.5110','W','50.865','3560-4-1','Arrecifes','-,'],
+      [',ARRE','34','0','49.0467','S','59','58','52.4062','W','70.966','3560-3-2','Arrecifes---La-Luisa','-,'],
+      [',ARZA','34','58','50.5726','S','61','46','39.8042','W','117.236','3563-18-3','Arenaza','-,'],
+      [',ATA1','35','24','9.6617','S','58','3','0.4318','W','30.150','3557-25-2','Altamirano','-,'],
+      [',ATAL','35','29','46.8493','S','58','1','45.2354','W','31.432','3557-25-2','Altamirano','-,'],
+      [',AVEL','34','41','11.8628','S','58','17','52.1430','W','26.479','3557-13-1','Lanus---Conurbano','-,'],
+      [',AYAC','37','8','43.0017','S','58','22','41.2060','W','81.557','3557-19-1','Ayacucho','-,'],
+      [',AZU1','36','48','59.3307','S','59','48','47.2443','W','156.320','3760-16-1','Azul','-,'],
+      [',AZU2','36','49','3.4884','S','59','52','16.5491','W','158.853','3760-16-1','Azul','-,'],
+      [',AZUL','36','46','1.2800','S','59','52','52.6087','W','158.313','-','-','Est.-Permanente,'],
+      [',BAA1','33','55','24.9673','S','59','25','51.0757','W','47.502','3360-35-3','Alsina','-,'],
+      [',BAIG','34','46','2.5586','S','60','58','28.8798','W','95.382','3560-14-1','Baigorrita','-,'],
+      [',BALC','37','44','20.3354','S','58','20','57.0586','W','125.007','3757-31-1','Cinco-Cerros','-,'],
+      [',BAR1','37','45','55.8272','S','60','23','33.1961','W','223.035','3760-33-1','Juan-E.-Barra','-,'],
+      [',BARA','33','54','35.9707','S','59','27','18.4466','W','49.031','3360-35-3','Alsina','-,'],
+      [',BARK','37','34','49.4877','S','59','22','11.7471','W','277.873','3760-29-3','Barker','-,'],
+      [',BARR','37','48','33.5685','S','60','28','57.8413','W','211.648','3760-33-1','Juan-E.-Barra','-,'],
+      [',BATH','37','38','8.9996','S','61','54','11.8743','W','287.332','3763-30-3','Bathurst','-,'],
+      [',BAYA','34','51','52.7144','S','61','22','18.6115','W','96.464','3560-13-3','Bayauca','-,'],
+      [',BBC1','38','42','3.6860','S','62','11','46.9298','W','79.862','3963-17-2','Base-Aeronaval-Cte.-Espora','-,'],
+      [',BBC2','38','42','5.2667','S','62','19','16.9441','W','32.378','3963-17-1','Bahia-Blanca','-,'],
+      [',BCAR','37','45','40.4408','S','58','18','3.9423','W','150.394','-','-','Est.-Permanente,'],
+      [',BEGU','35','30','39.9494','S','59','11','35.8991','W','41.652','3560-29-4','Santiago-Larre','-,'],
+      [',BELL','38','41','53.5057','S','60','5','8.4933','W','51.899','3960-15-2','San-Francisco-Bellocq','-,'],
+      [',BERR','38','26','49.5635','S','62','54','41.1421','W','104.418','3963-10-1','Est.-Berraondo','-,'],
+      [',BGRA','36','32','8.1390','S','60','53','26.7302','W','123.187','3760-8-3','Blanca-Grande','-,'],
+      [',BHBL','38','42','48.0876','S','62','13','36.3527','W','87.019','3963-17-2','Base-Aeronaval-Cte.-Espora','-,'],
+      [',BHO1','38','45','49.0292','S','61','50','28.4880','W','98.186','3963-18-1','Bajo-Hondo','-,'],
+      [',BHON','38','44','47.6680','S','61','51','38.1545','W','101.176','3963-18-1','Bajo-Hondo','-,'],
+      [',BJU1','37','44','37.9819','S','59','47','44.3691','W','218.301','3760-34-1','Juarez','-,'],
+      [',BJUA','37','43','10.8150','S','59','46','1.4084','W','216.299','3760-34-1','Juarez','-,'],
+      [',BLAN','34','32','29.3159','S','61','15','2.7956','W','99.087','3560-7-4','Saforcada','-,'],
+      [',BOL1','36','13','25.7357','S','61','5','30.3141','W','110.524','3760-1-4','Bolivar','-,'],
+      [',BOLI','36','14','31.4809','S','61','6','53.8468','W','109.767','3760-1-4','Bolivar','-,'],
+      [',BRA1','35','4','40.4431','S','60','22','41.4689','W','72.700','3560-21-1','Bragado','-,'],
+      [',BRAG','35','6','16.1789','S','60','24','32.0799','W','67.736','3560-21-1','Bragado','-,'],
+      [',BUCH','34','0','22.6977','S','58','14','22.4775','W','39.320','3557-19-2','Gomez---Conurbano','-,'],
+      [',CAGL','40','35','32.9525','S','62','49','59.5870','W','48.889','4163-10-3','Cardenal-Cagliero','-,'],
+      [',CAL1','38','41','20.0223','S','61','26','25.3225','W','127.035','3960-13-1','Coronel-Dorrego','-,'],
+      [',CALV','38','43','41.4318','S','61','23','29.5825','W','117.576','3960-13-1','Coronel-Dorrego','-,'],
+      [',CAMP','36','22','9.9897','S','59','52','4.8301','W','103.944','3760-10-1','Campodonico','-,'],
+      [',CANU','35','0','35.4426','S','58','42','33.5979','W','40.633','3560-24-2','Est.-La-Cabaña','-,'],
+      [',CAR1','34','24','11.2343','S','59','51','18.7994','W','64.610','3560-10-1','Carmen-de-Areco','-,'],
+      [',CARE','34','25','8.0753','S','59','46','20.1356','W','71.060','3560-10-1','Carmen-de-Areco','-,'],
+      [',CARO','35','58','22.3688','S','58','11','13.9434','W','33.288','-','Pila','-,'],
+      [',CAS1','36','19','23.5411','S','58','34','0.2912','W','44.237','3560-6-4','Casalins','-(*),'],
+      [',CASA','36','18','2.2326','S','58','31','59.9450','W','41.077','3560-6-4','Casalins','-,'],
+      [',CCAS','35','39','11.4712','S','61','26','48.5393','W','101.284','3560-25-3','Carlos-Casares','-,'],
+      [',CGLO','36','0','19.8907','S','57','26','51.1773','W','22.030','3757-3-1','Est.-La-Porteña','-(*),'],
+      [',CHA1','35','53','6.9455','S','58','37','3.9931','W','37.820','3560-36-4','Chas','-,'],
+      [',CHAC','34','37','19.7816','S','60','25','9.9985','W','87.091','3560-9-3','Chacabuco','-(*),'],
+      [',CHAS','35','52','24.4882','S','58','34','46.2106','W','37.891','3560-36-4','Chas','-,'],
+      [',CHC1','34','36','17.4276','S','60','26','57.9521','W','88.401','3560-9-3','Chacabuco','-,'],
+      [',CHI1','34','53','48.2297','S','60','6','35.9648','W','68.318','3560-15-4','Chivilcoy','-,'],
+      [',CHIV','34','54','56.5801','S','60','6','33.2079','W','67.923','3560-15-4','Chivilcoy','-,'],
+      [',CHOY','34','53','53.3218','S','60','1','9.9853','W','87.486','-','Chivilcoy','-,'],
+      [',CLAR','37','58','44.3612','S','59','27','22.0039','W','166.976','3760-35-3','Claraz','-,'],
+      [',CMAL','37','27','22.7669','S','62','11','10.3561','W','262.735','3763-29-2','Cura-Malal','-,'],
+      [',CMUE','38','41','39.8266','S','59','30','59.7969','W','34.273','3960-16-2','Balneario-Orense','-,'],
+      [',COL1','33','54','10.9602','S','61','9','0.2135','W','94.093','3360-31-4','Colon','-,'],
+      [',COLO','33','54','39.0486','S','61','5','52.5929','W','96.348','3360-31-4','Colon','-,'],
+      [',COPY','35','19','0.0427','S','60','31','21.9840','W','77.568','3560-20-4','Comodoro-Py','-,'],
+      [',CORA','36','15','3.0119','S','62','29','42.0625','W','116.097','3763-5-3','Est.-Corazzi','-,'],
+      [',CPA1','40','45','18.2904','S','62','55','14.8960','W','52.221','4163-16-1','Viedma','-,'],
+      [',CPAT','40','46','47.4739','S','62','57','12.3823','W','52.180','4163-16-1','Viedma','-,'],
+      [',CROT','36','35','36.0578','S','60','10','34.0772','W','138.143','3760-9-4','Crotto','-,'],
+      [',CSAN','37','59','10.1794','S','62','20','37.1663','W','296.892','3763-35-3','Dufaur','-,'],
+      [',CTE1','35','23','27.5662','S','62','26','49.2838','W','113.217','3563-29-1','Carlos-Tejedor','-,'],
+      [',CTEJ','35','23','10.5430','S','62','24','49.5797','W','113.447','3563-29-1','Carlos-Tejedor','-,'],
+      [',CVID','37','28','52.9260','S','57','43','10.0080','W','39.277','3757-26-2','Coronel-Vidal','-,'],
+      [',DAI1','36','33','16.2604','S','61','39','3.6711','W','131.107','3763-12-4','Daireaux','-(*),'],
+      [',DAIR','36','34','43.1069','S','61','41','52.0895','W','130.688','3763-12-4','Daireaux','-,'],
+      [',DARR','37','40','24.2917','S','63','10','24.4423','W','212.331','3763-33-2','Darregeira','-,'],
+      [',DCAN','37','10','0.9837','S','59','6','17.8793','W','159.882','3760-23-4','Tandil','-,'],
+      [',DOL1','36','13','24.0760','S','57','43','31.1347','W','24.111','3757-2-4','Dolores','-,'],
+      [',DOLO','36','15','41.3834','S','57','44','30.4440','W','25.128','3757-2-4','Dolores','-,'],
+      [',DORA','34','39','7.2401','S','61','34','39.3997','W','106.968','3563-12-4','El-Dorado','-(*),'],
+      [',DORB','37','49','33.6556','S','61','48','19.8379','W','355.781','3763-36-1','Arroyo-Sauce-Corto','-,'],
+      [',DORE','36','18','54.3626','S','57','40','51.5848','W','34.065','-','Dolores','Est.-Permanente,'],
+      [',EBOQ','38','1','57.2938','S','57','48','10.9562','W','102.985','3957-2-1','Comandante-Nicanor-Otamendi','-,'],
+      [',ECRO','36','18','45.9063','S','57','28','14.5282','W','21.158','3757-3-3','Ea.-Santa-Lucia','-,'],
+      [',EGAN','36','57','54.6593','S','59','11','4.6124','W','134.832','3760-17-4','Estación-Egaña','-,'],
+      [',ELAM','40','9','2.3154','S','62','39','25.8251','W','41.490','4163-4-2','Est.-Emilio-Lamarca','-,'],
+      [',ELSO','39','27','53.1679','S','63','1','23.1957','W','43.466','3963-27-2','Colonia-San-Enrique','-,'],
+      [',ELTE','35','18','0.7159','S','61','3','5.8806','W','93.419','3560-19-4','El-Tejar','-,'],
+      [',ELUC','37','19','26.7033','S','60','20','0.5695','W','250.137','3760-21-3','El-Luchador','-,'],
+      [',ENE1','38','33','24.5658','S','59','20','40.5483','W','44.943','3960-11-3','Energia','-,'],
+      [',ENER','38','33','8.1609','S','59','17','57.7381','W','46.096','3960-11-3','Energia','-,'],
+      [',ESBB','37','45','9.7901','S','58','0','33.0446','W','80.594','3757-31-2','Sierra-Pachicha','-,'],
+      [',ETCH','35','2','42.1383','S','58','11','33.0630','W','37.471','3557-19-2','Gomez---Conurbano','-,'],
+      [',ETRI','35','56','45.3355','S','59','19','8.5867','W','50.479','3560-35-3','El-Trigo','-,'],
+      [',EVIO','36','46','25.6596','S','57','13','46.5030','W','18.732','3757-15-2','Ea.-Las-Violetas','-,'],
+      [',EZEI','34','51','12.6599','S','58','31','23.8954','W','37.135','3560-18-4','Ezeiza---Conurbano','-,'],
+      [',FARO','38','48','2.7758','S','61','0','54.6908','W','67.262','3960-13-2','José-Salta-Guisasola','-,'],
+      [',FESP','37','30','46.8566','S','58','53','40.8625','W','211.727','3760-30-3','Fabrica-La-Esperanza','-,'],
+      [',FQUE','37','26','18.5677','S','57','14','49.9650','W','18.402','3757-27-2','Faro-Querandi','-,'],
+      [',FVAR','34','46','29.0364','S','58','16','1.1738','W','35.784','3557-13-1','Lanus---Conurbano','-,'],
+      [',GAL1','36','1','37.3476','S','59','57','9.7856','W','71.048','3760-4-1','Est.-S.-Juan-de-Giribone','-,'],
+      [',GALV','36','0','26.3109','S','59','53','58.7336','W','69.623','3760-4-1','Est.-S.-Juan-de-Giribone','-,'],
+      [',GAR1','36','38','35.1067','S','62','41','45.5422','W','139.069','3763-10-4','Garre','-,'],
+      [',GARR','36','32','28.3314','S','62','38','7.8178','W','133.640','3763-10-4','Garre','-,'],
+      [',GASC','37','24','11.6805','S','63','15','8.4419','W','170.833','3763-27-1','Esteban-Agustin-Gazcon','-,'],
+      [',GCHA','38','11','9.4018','S','60','13','56.3802','W','167.378','3960-3-4','San-Mayol','-,'],
+      [',GCON','36','30','57.4082','S','57','18','12.8217','W','19.625','3757-9-3','General-Conesa','-,'],
+      [',GILE','34','23','12.3573','S','59','19','17.2979','W','51.331','3560-11-1','San-Andres-de-Giles','-,'],
+      [',GLAV','36','28','23.0890','S','56','51','59.5398','W','18.441','3757-10-1','General-Lavalle','-,'],
+      [',GMA1','36','55','40.4693','S','57','12','44.1684','W','20.743','3757-15-4','General-Juan-Madariaga','-,'],
+      [',GMAD','36','58','59.7544','S','57','14','36.2718','W','20.516','3757-15-4','General-Juan-Madariaga','-,'],
+      [',GMOR','35','33','8.8456','S','63','20','58.6789','W','133.413','3563-27-3','Gonzalez-Moreno','-,'],
+      [',GOCA','34','46','38.0975','S','58','38','26.6725','W','31.601','3560-18-2','Aeropuerto-Ezeiza---Conurbano','-,'],
+      [',GOME','35','4','12.7326','S','58','7','53.6255','W','34.763','3557-19-2','Est.-Gomez','-,'],
+      [',GORC','35','41','20.2895','S','58','52','36.3666','W','41.483','3560-36-1','Gorchs','-,'],
+      [',GRIO','38','21','16.0876','S','62','12','17.1432','W','256.367','3963-11-2','Est.-Naposta','-,'],
+      [',GROD','34','35','56.0426','S','58','56','31.0036','W','50.134','3560-12-3','Moreno---Conurbano','-,'],
+      [',GUA1','37','1','45.5079','S','62','23','54.5428','W','131.544','3763-23-1','Guamini','-,'],
+      [',GUAL','36','12','12.2787','S','59','3','2.6234','W','58.862','3760-5-4','Las-Flores','-,'],
+      [',GUAM','37','3','9.6898','S','62','25','41.2905','W','128.891','3763-23-1','Guamini','-,'],
+      [',GUER','34','55','12.4432','S','58','22','48.6706','W','42.889','3557-13-3','Emp.-San-Vicente---Conurbano','-,'],
+      [',GVIL','35','1','57.3609','S','63','0','49.1131','W','148.627','-','-','Est.-Permanente,'],
+      [',HALE','36','2','24.6092','S','60','48','23.7235','W','96.660','3760-2-1','Hale','-,'],
+      [',HEN1','36','15','24.3991','S','61','37','56.1362','W','121.998','3763-6-4','Henderson','-,'],
+      [',HEND','36','17','47.1836','S','61','42','7.7343','W','124.844','3763-6-4','Henderson','-(*),'],
+      [',HUA1','37','7','45.1138','S','61','53','48.8405','W','188.911','3763-24-1','Huanguelen','-,'],
+      [',HUAN','37','5','37.7862','S','61','57','7.4269','W','181.665','3763-24-1','Huanguelen','-,'],
+      [',HUDS','34','46','34.4347','S','58','9','40.6013','W','26.143','3557-13-2','Berazategui---Conurbano','-,'],
+      [',HURL','34','33','59.5825','S','58','38','25.9534','W','29.621','3560-18-4','Ezeiza---Conurbano','-,'],
+      [',HVEG','36','1','7.1895','S','61','19','49.0984','W','106.989','3760-1-1','Herrera-Vegas','-(*),'],
+      [',IAR','34','51','57.6090','S','58','8','24.9667','W','29.937','3757-13-4','Villa-Elisa---Conurbano','-,'],
+      [',IGAR','39','43','13.6232','S','62','40','16.7729','W','23.503','3963-34-2','Est.-Igarzabal','-(*),'],
+      [',IGM1','34','34','20.0773','S','58','26','21.5496','W','50.694','3557-7-3','Ciudad-de-Bs.-As.','Est.-Permanente,'],
+      [',IIND','34','27','3.5856','S','60','36','37.2278','W','77.431','3560-8-2','Ines-indart','-,'],
+      [',INPE','35','58','14.9539','S','62','10','14.8103','W','106.956','3563-35-4','Francisco-Madero','-,'],
+      [',IREN','38','33','13.3515','S','60','41','51.3918','W','113.992','3960-8-4','Irene','-,'],
+      [',JAU1','34','35','59.8124','S','59','9','4.0442','W','39.569','3560-11-4','Lujan','-,'],
+      [',JAUR','34','36','29.1980','S','59','10','21.7216','W','44.909','3560-11-4','Lujan','-,'],
+      [',JJPA','35','54','3.1632','S','62','22','50.1930','W','105.286','-','Pehuajo','-,'],
+      [',JUN1','34','39','48.0967','S','60','53','8.8001','W','97.216','3560-8-3','Junin','-,'],
+      [',JUNI','34','39','3.1854','S','60','54','40.7060','W','96.936','3560-8-3','Junin','-,'],
+      [',KRAB','37','53','7.9065','S','61','1','44.3457','W','216.765','3763-31-4','La-Pampa','-,'],
+      [',LABA','36','51','13.7172','S','58','9','13.9047','W','44.896','3757-13-4','Labarden','-,'],
+      [',LACU','37','5','52.4326','S','58','35','39.7013','W','97.882','3760-24-2','Ea.-La-Cuadrada','-,'],
+      [',LAMA','38','18','57.1172','S','58','18','11.6951','W','45.449','3957-1-4','Ea.-La-Malacara','-,'],
+      [',LAN1','36','39','1.9564','S','58','32','25.8514','W','58.238','3760-12-4','Udaquiola','-,'],
+      [',LANG','36','38','4.5123','S','58','30','35.0670','W','56.724','3760-12-4','Udaquiola','-,'],
+      [',LARM','37','4','26.2108','S','57','37','14.1748','W','27.765','3757-20-4','Ea.-Mari-Huincul','-,'],
+      [',LART','38','29','2.5758','S','61','35','13.5061','W','254.496','3963-12-2','Lartigau','-,'],
+      [',LBRA','37','52','1.6594','S','57','56','34.0547','W','84.364','3757-32-3','Sierra-de-los-Padres','-,'],
+      [',LCAM','35','44','12.7086','S','59','34','48.2198','W','50.623','3560-34-2','La-Campana','-,'],
+      [',LCO1','37','21','15.3986','S','61','31','47.2172','W','208.174','3763-30-2','La-Colina','-,'],
+      [',LCOL','37','22','22.6871','S','61','35','5.3239','W','215.565','3763-30-2','La-Colina','-,'],
+      [',LERN','35','15','4.2430','S','59','30','34.8148','W','52.438','3560-22-4','Pedernales','-,'],
+      [',LEVA','38','51','25.7015','S','62','54','55.8499','W','55.059','3963-16-3','Nicolas-Lavalle','-,'],
+      [',LFL1','35','59','23.5130','S','59','6','54.1032','W','49.264','3560-35-4','Coronel-Boerr','-,'],
+      [',LFLO','36','2','55.0407','S','59','5','17.7598','W','51.546','3760-5-2','Las-Flores','-,'],
+      [',LFRA','36','4','12.6795','S','60','15','10.4325','W','80.989','3760-3-1','Ea.-La-Francia','-,'],
+      [',LIBA','37','31','51.9974','S','61','17','46.8325','W','216.757','3760-25-3','Libano','-,'],
+      [',LIN1','34','57','30.2287','S','61','34','13.3786','W','103.937','3563-18-4','Lincoln','-,'],
+      [',LINC','34','55','30.4504','S','61','36','57.6330','W','107.306','3563-18-4','Lincoln','-,'],
+      [',LINV','34','16','39.1207','S','60','21','26.4375','W','64.234','3560-3-3','Salto','-,'],
+      [',LLAN','40','56','46.4927','S','62','48','34.1366','W','44.136','-','Patagones','-,'],
+      [',LLE1','38','5','53.3599','S','62','32','44.5000','W','263.569','3963-4-2','Lopez-Lecube','-,'],
+      [',LLEC','38','3','49.9907','S','62','35','22.3414','W','251.375','3963-4-2','Lopez-Lecube','-,'],
+      [',LOB1','38','9','45.6575','S','58','53','23.4573','W','99.373','3960-6-1','Loberia','-,'],
+      [',LOBE','38','7','47.4390','S','58','52','21.7147','W','104.895','3960-6-1','Loberia','-(*),'],
+      [',LOBO','35','10','51.5346','S','59','7','28.5802','W','46.325','3560-23-4','Lobos','-,'],
+      [',LOO1','35','10','4.8410','S','59','10','37.2479','W','45.447','3560-23-4','Lobos','-,'],
+      [',LPGS','34','54','24.2824','S','57','55','56.2783','W','29.875','3557-14-3','La-Plata','Est.-Permanente,'],
+      [',LPIE','37','12','0.2500','S','58','8','16.7635','W','60.639','3757-19-4','Ea.-Las-Piedras','-,'],
+      [',LPIL','38','5','36.1131','S','59','58','9.5045','W','195.039','3960-4-1','Ea.-La-Pileta','-,'],
+      [',LPR1','37','34','40.3143','S','60','52','43.6087','W','224.674','3760-26-3','Laprida','-,'],
+      [',LPRI','37','36','41.7008','S','60','52','11.1135','W','222.015','3760-26-3','Laprida','-,'],
+      [',LSO1','38','4','0.9131','S','60','36','41.9985','W','182.745','3960-2-2','La-Sortija','-,'],
+      [',LSOR','38','6','56.8685','S','60','40','20.3791','W','178.479','3960-2-2','La-Sortija','-,'],
+      [',LTO1','35','6','49.6015','S','61','10','4.6298','W','91.368','3560-19-2','General-Viamonte','-,'],
+      [',LTOL','35','7','52.7298','S','61','12','1.1309','W','92.425','3560-19-2','General-Viamonte','-(*),'],
+      [',LVER','35','11','19.8593','S','58','21','7.9142','W','34.066','3557-19-3','Loma-Verde','-,'],
+      [',LVIR','35','22','8.6960','S','57','44','31.0387','W','24.467','3557-26-2','La-Viruta','-,'],
+      [',MAG1','35','6','8.9375','S','57','28','44.0901','W','26.210','3557-21-1','Magdalena-Este','-,'],
+      [',MAGD','35','4','3.4912','S','57','36','37.0326','W','23.819','3557-20-2','Magdalena','-,'],
+      [',MAI1','36','57','6.9193','S','57','52','8.3091','W','31.057','3757-14-3','Maipu','-,'],
+      [',MAIP','36','52','48.4678','S','57','52','30.3787','W','30.265','3757-14-3','Maipu','-,'],
+      [',MAJ1','36','43','16.6640','S','56','40','39.0018','W','19.930','3757-16-2','Mar-de-Ajo','-,'],
+      [',MAJO','36','42','1.4433','S','56','47','6.0904','W','17.373','3757-16-1','Ea.-El-Regreso','-,'],
+      [',MAMA','35','42','11.5261','S','60','11','21.5873','W','70.205','3560-33-2','Mamaguita','-,'],
+      [',MAXI','34','56','2.9281','S','58','37','6.7390','W','31.184','3560-18-4','Ezeiza','-,'],
+      [',MBU1','39','14','37.4324','S','62','35','41.3969','W','30.824','3963-22-4','Mayor-Buratovich','-,'],
+      [',MBUR','39','11','12.8635','S','62','34','51.4124','W','41.535','3963-22-4','Mayor-Buratovich','-,'],
+      [',MCHI','37','43','12.2370','S','57','27','4.9897','W','19.306','3757-33-1','Parque-Mar-Chiquita','-,'],
+      [',MCOL','36','25','9.5197','S','59','8','34.8836','W','73.438','3760-11-2','Martin-Colman','-,'],
+      [',MERC','34','39','9.3674','S','59','20','14.1017','W','52.761','3560-11-3','Mercedes','-(*),'],
+      [',MIRA','38','10','38.0145','S','57','56','39.9769','W','59.942','3957-2-3','Miramar','-,'],
+      [',MJOS','36','14','32.9726','S','62','52','38.4427','W','121.913','3763-4-3','Ea.-La-Maria-Josefa','-(*),'],
+      [',MOC1','38','55','20.0825','S','63','20','23.7300','W','64.404','3963-15-3','Montes-de-Oca','-,'],
+      [',MOCA','38','55','4.7160','S','63','18','42.0646','W','63.664','3963-15-3','Montes-de-Oca','-,'],
+      [',MONA','35','47','36.8225','S','57','55','21.2999','W','26.780','3557-32-1','Monasterio','-,'],
+      [',MOSC','35','43','52.8931','S','60','33','10.3520','W','85.378','3560-32-2','Mosconi','-,'],
+      [',MPL1','38','3','2.5990','S','57','32','28.2832','W','20.486','3560-32-2','Mar-del-Plata','-,'],
+      [',MPL2','38','0','20.7624','S','57','34','16.6703','W','53.592','3957-2-2','Mar-del-Plata','Est.-Permanente,'],
+      [',NAPA','37','36','31.2239','S','58','45','10.1159','W','171.144','3760-30-3','Fabrica-La-Esperanza','-,'],
+      [',NAPO','38','19','28.9877','S','62','0','56.8253','W','249.210','3963-5-4','Tres-Picos','-,'],
+      [',NAVA','34','58','4.6613','S','59','16','22.0805','W','51.713','3560-17-3','Est.-Ingeniero-Williams','-,'],
+      [',NDES','38','28','6.1507','S','61','5','16.3663','W','184.489','3960-7-2','La-Aurora','-,'],
+      [',NEC1','38','37','24.4144','S','58','54','2.0591','W','25.483','3960-12-3','Punta-Negra','-,'],
+      [',NECO','38','35','31.5874','S','58','51','40.5072','W','30.318','3960-12-3','Punta-Negra','-,'],
+      [',NESA','40','6','19.4151','S','64','27','14.4171','W','83.111','-','-','Est.-Permanente,'],
+      [',NOLI','38','16','33.0429','S','59','11','25.3480','W','108.977','3960-5-4','Nicanor-Olivera','-,'],
+      [',NRIE','35','16','37.0531','S','59','50','19.8499','W','61.689','3560-22-3','Norberto-de-la-Riestra','-,'],
+      [',NROM','38','34','57.2448','S','62','30','39.5560','W','117.395','3963-10-4','Nueva-Roma','-,'],
+      [',OBRI','34','54','50.4545','S','60','43','34.2239','W','86.321','3560-14-4','Warnes','-,'],
+      [',OHIG','34','38','51.5096','S','60','39','5.9938','W','87.622','3560-8-4','Ohiggins','-(*),'],
+      [',OLA1','36','58','41.5969','S','60','26','50.3310','W','199.749','3760-15-3','Olavarria','-(*),'],
+      [',OLAV','36','55','41.6081','S','60','23','12.4686','W','188.182','3760-15-3','Olavarria','-,'],
+      [',OLIV','34','30','14.1799','S','58','28','34.8946','W','19.080','3757-7-1','Est.-Martinez','-,'],
+      [',OMBU','38','56','45.9812','S','62','33','26.0541','W','34.159','3963-16-4','Est.-Ombucta','-,'],
+      [',ORIE','38','44','20.2367','S','60','35','41.2947','W','61.058','3960-14-2','Oriente','-'],
+      [',P052','34','54','59.3019','S','58','50','9.0240','W','45.608','3560-18-3','General-Las-Heras','-,'],
+      [',PACO','37','9','23.9472','S','59','37','3.9147','W','185.867','3760-22-2','Pablo-Acosta','-,'],
+      [',PARD','36','14','29.8777','S','59','23','17.8593','W','74.226','3760-5-3','Pardo','-,'],
+      [',PARI','36','33','15.4036','S','59','38','9.9671','W','109.575','3760-10-4','Parish','-,'],
+      [',PATA','40','47','48.1213','S','62','59','21.7822','W','61.155','-','Carmen-de-Patagones','Est.-Permanente,'],
+      [',PEBA','33','56','44.9328','S','60','33','44.8923','W','94.414','-','Pergamino','Est.-Permanente,'],
+      [',PEC1','38','50','34.3100','S','61','32','31.1963','W','65.815','3963-18-4','Balneario-Pehuenco','-,'],
+      [',PECO','38','54','36.5106','S','61','30','40.9356','W','36.214','3963-18-4','Balneario-Pehuenco','-,'],
+      [',PEH1','35','42','55.3103','S','61','52','28.6196','W','102.298','3563-36-1','Pehuajo','-,'],
+      [',PEHO','38','47','41.2982','S','61','42','19.4635','W','74.114','3963-18-2','San-Roman','-,'],
+      [',PEHU','35','44','4.2632','S','61','53','55.6220','W','103.059','3563-36-1','Pehuajo','-,'],
+      [',PEJO','35','48','22.7686','S','61','53','40.6991','W','110.152','-','-','Est.-Permanente,'],
+      [',PELI','38','17','5.9287','S','62','35','54.4159','W','201.711','3963-4-4','Pelicura','-,'],
+      [',PEMI','33','43','57.9847','S','60','0','6.1550','W','65.864','3360-33-2','Perez-Millan','-,'],
+      [',PER1','33','53','18.9823','S','60','36','32.6090','W','82.345','3360-32-4','Pergamino','-,'],
+      [',PERG','33','54','37.6120','S','60','35','56.3061','W','82.774','3360-32-4','Pergamino','-,'],
+      [',PF59','35','5','36.6432','S','57','57','35.6934','W','38.404','3557-20-1','Ignacio-Correas','-,'],
+      [',PFN6','40','56','46.4927','S','62','48','34.1366','W','44.136','-','-','-,'],
+      [',PFN7','40','58','6.4608','S','62','48','17.7391','W','18.457','-','-','-,'],
+      [',PIER','38','22','20.9999','S','58','40','47.3576','W','53.553','3960-12-2','Pieres','-(*),'],
+      [',PIG1','37','34','47.4715','S','62','30','11.5777','W','325.659','3763-28-4','Altavista---Pigüe','-,'],
+      [',PIGU','37','34','2.4965','S','62','27','46.3982','W','309.747','3763-29-3','Pigüe','-,'],
+      [',PILA','36','4','45.8029','S','58','6','28.7339','W','26.853','3757-1-2','Pila','-,'],
+      [',PILL','38','6','36.6293','S','61','21','26.2251','W','313.728','3960-1-1','Est.-Pillahuinco','-(*),'],
+      [',PIP1','35','32','59.8599','S','57','22','41.9899','W','25.365','3557-27-3','Pipinas','-,'],
+      [',PIPI','35','31','46.3380','S','57','18','46.2177','W','25.539','3557-27-3','Pipinas','-,'],
+      [',PLAR','34','49','49.3220','S','57','59','31.9467','W','19.397','3557-14-3','La-Plata','-,'],
+      [',PLU1','39','35','38.9155','S','62','39','4.4465','W','29.132','3963-28-4','Pedro-Luro','-,'],
+      [',PLUR','39','33','25.0680','S','62','40','43.9546','W','31.200','3963-28-4','Pedro-Luro','-,'],
+      [',PNIR','37','42','3.6997','S','61','56','2.8909','W','309.022','3763-36-1','Arroyo-Sauce-Corto','-,'],
+      [',PONT','37','43','10.0781','S','61','20','55.7842','W','253.429','3760-31-1','Pontaut','-,'],
+      [',POUR','36','55','55.4170','S','60','47','17.0415','W','184.057','3760-14-3','Ea.-Los-Olivos','-,'],
+      [',PPAZ','35','2','37.1333','S','58','24','54.1271','W','38.494','3560-24-2','Ea.-La-Cabaña','-,'],
+      [',PUAN','37','34','5.8500','S','62','47','33.5460','W','235.658','3763-28-3','Puan','-,'],
+      [',PUNI','36','30','11.7131','S','58','7','27.9584','W','32.611','3757-7-4','Paraje-La-Union','-,'],
+      [',QUIL','34','42','24.3919','S','58','13','49.0959','W','18.086','3557-13-2','Berazategui','-,'],
+      [',QUER','40','24','30.2084','S','62','47','3.0964','W','42.772','-','Patagones','-,'],
+      [',RANC','35','31','33.7690','S','58','19','36.1802','W','36.520','3557-25-3','General-Paz','-,'],
+      [',RASA','40','49','42.8194','S','62','19','33.4085','W','20.293','-','Patagones','-,'],
+      [',RBUN','37','38','40.1225','S','60','13','16.7097','W','236.814','3760-27-4','Est.-Coronel-Rodolfo-Bunge','-,'],
+      [',RECA','36','39','14.1324','S','61','5','27.1415','W','130.414','3760-7-4','Recalde','-,'],
+      [',REL1','36','15','59.9836','S','63','24','50.5574','W','137.416','3763-3-3','Relmo','-,'],
+      [',RELM','36','15','38.9571','S','63','26','30.2014','W','142.232','3763-3-3','Relmo','-,'],
+      [',RIRE','34','36','35.1463','S','58','42','58.1495','W','31.430','3560-12-4','Campo-de-Mayo','-,'],
+      [',RIVE','37','7','51.7413','S','63','14','2.3692','W','144.142','3763-21-2','Rivera','-,'],
+      [',ROB1','35','9','3.9012','S','61','53','43.6238','W','119.429','3563-24-1','Roberts','-,'],
+      [',ROBE','35','8','50.5791','S','61','55','28.2545','W','120.214','3563-24-1','Roberts','-,'],
+      [',ROBL','34','22','21.0552','S','60','49','2.1222','W','84.978','3560-8-1','Rafael-Obligado','-,'],
+      [',ROCH','37','9','52.3794','S','61','2','2.8709','W','189.612','3760-19-2','Quilco','-,'],
+      [',ROJ1','34','14','5.1881','S','60','42','17.5293','W','75.020','3560-2-4','Rojas','-,'],
+      [',ROJA','34','14','26.3041','S','60','43','42.7172','W','81.265','3560-2-4','Rojas','-,'],
+      [',RUFI','34','15','46.4002','S','62','43','34.2015','W','148.693','-','Santa-Fe','Est.-Permanente,'],
+      [',SAAV','37','48','40.8566','S','62','19','56.0192','W','335.940','3763-35-1','Saavedra','-,'],
+      [',SAGU','38','2','2.1763','S','58','19','50.7221','W','117.903','3957-1-1','San-Agustin','-,'],
+      [',SAL1','36','17','52.1163','S','62','10','45.4875','W','121.896','3763-5-4','Mones-Cazon','-,'],
+      [',SALA','36','17','37.5598','S','62','11','8.5911','W','124.281','3763-5-4','Mones-Cazon','-,'],
+      [',SALL','36','40','17.7935','S','62','56','1.3055','W','141.232','3763-16-1','Salliquello','-,'],
+      [',SALT','34','17','0.3804','S','60','13','15.9507','W','66.472','3560-3-4','Est.-Salto','-,'],
+      [',SAR1','34','15','58.6302','S','59','27','16.3845','W','43.842','3560-5-3','San-Antonio-de-Areco','-,'],
+      [',SARE','34','13','30.9209','S','59','27','11.1179','W','43.125','3560-5-3','San-Antonio-de-Areco','-,'],
+      [',SATO','37','38','1.3893','S','59','53','49.3305','W','234.471','3760-28-3','Combate-de-Iraola','-,'],
+      [',SATU','36','57','51.6485','S','62','42','16.8691','W','131.146','3763-16-4','Saturno','-(*),'],
+      [',SBE1','36','21','50.5781','S','60','34','38.5226','W','107.399','3760-8-2','Espigas','-,'],
+      [',SBER','36','20','56.3931','S','60','32','32.8317','W','106.327','3760-8-2','Espigas','-,'],
+      [',SCAY','38','18','27.7254','S','59','36','30.3305','W','118.062','3960-4-4','Ea.-Dos-Hermanas','-,'],
+      [',SCOL','34','8','0.0455','S','59','39','21.2947','W','63.899','3560-4-2','Santa-Coloma','-,'],
+      [',SDI1','35','36','12.6447','S','59','45','11.7826','W','60.474','3560-28-3','Saladillo','-,'],
+      [',SDIL','35','38','29.4013','S','59','49','22.3131','W','62.031','3560-28-3','Saladillo','-,'],
+      [',SDOM','36','40','56.4509','S','57','36','11.5764','W','22.853','3757-14-2','Santo-Domingo','-,'],
+      [',SHIP','37','50','15.2052','S','60','6','23.0362','W','225.152','3760-33-4','Ea.-San-Hipolito','-,'],
+      [',SIGN','37','22','11.6219','S','58','28','20.6084','W','100.907','3757-25-1','Ea.-San-Ignacio','-,'],
+      [',SITI','37','22','43.0001','S','59','7','38.7264','W','397.831','3760-29-2','Sierra-del-Tandil','-,'],
+      [',SIVE','38','8','14.8349','S','61','48','0.5166','W','281.837','3963-6-1','Sierra-de-la-Ventana','-,'],
+      [',SJOS','40','58','6.4608','S','62','48','17.7391','W','18.457','-','Patagones','-,'],
+      [',SJUA','39','56','8.4026','S','63','22','56.5708','W','55.125','3963-33-3','Ea.-San-Juan','-(*),'],
+      [',SJUS','34','41','16.9688','S','58','33','24.4186','W','43.824','3560-18-2','Aeródromo-de-Ezeiza','-,'],
+      [',SLAR','37','52','12.4598','S','58','41','50.5994','W','162.997','3760-36-4','Sierra-Larga','-,'],
+      [',SLL1','36','45','36.9629','S','62','56','58.2782','W','145.724','3763-16-1','Salliquello','-,'],
+      [',SMAT','34','25','12.6096','S','58','50','15.0596','W','27.581','3560-12-1','Pilar','-,'],
+      [',SMIG','36','56','52.3199','S','60','6','14.7672','W','207.885','3760-15-4','Sierra-Chica','-,'],
+      [',SNI1','33','25','10.5497','S','60','15','4.6032','W','53.381','3360-27-1','General-Rojo','-,'],
+      [',SNIC','33','28','46.2306','S','60','17','33.5659','W','61.845','3360-27-1','General-Rojo','-(*),'],
+      [',SPE1','33','39','42.9085','S','59','54','11.5747','W','50.947','3360-28-3','Gobernador-Castro','-,'],
+      [',SPED','33','41','25.9314','S','59','40','41.4196','W','42.880','3360-34-2','San-Pedro','-,'],
+      [',SRLP','36','37','17.3980','S','64','16','49.4568','W','223.848','-','-','Est.-Permanente,'],
+      [',STAN','37','26','47.9710','S','59','0','52.6480','W','235.433','3760-29-2','Sierra-del-Tandil','-,'],
+      [',STEG','37','58','13.8407','S','61','32','21.3229','W','308.520','3763-36-4','Stegmann','-,'],
+      [',SUAR','37','27','30.5999','S','61','55','52.6512','W','264.038','-','-','Est.-Permanente,'],
+      [',SUIP','34','49','28.7739','S','59','48','22.3052','W','62.109','3560-16-1','Est.-Roman-Baez','-,'],
+      [',TAN1','37','20','50.7049','S','58','59','21.3817','W','190.807','3760-30-1','Fulton','-,'],
+      [',TAR1','38','20','26.5991','S','60','19','21.2891','W','132.512','3960-9-1','-Tres-Arroyos','-,'],
+      [',TARR','38','21','39.7561','S','60','22','52.6649','W','145.712','3960-9-1','Tres-Arroyos','-,'],
+      [',TIGR','34','26','2.9234','S','58','35','7.1938','W','23.235','3560-12-2','San-Fernando','-,'],
+      [',TLA1','35','57','13.4453','S','62','42','29.4266','W','109.002','3563-34-4','Trenque-Lauquen','-,'],
+      [',TLAU','35','55','3.2113','S','62','38','5.8708','W','107.804','3563-34-4','Trenque-Lauquen','-,'],
+      [',TPI1','38','12','32.5136','S','62','13','7.3460','W','276.979','3963-5-4','Tres-Picos','-,'],
+      [',TPIC','38','14','40.4795','S','62','12','53.9003','W','273.445','3963-5-4','Tres-Picos','-,'],
+      [',TSAR','34','27','52.8271','S','60','2','19.1010','W','73.370','3560-9-2','Gahan','-,'],
+      [',TURI','37','21','41.5032','S','59','46','46.5444','W','265.547','3760-28-1','Tedin-Uriburu','-,'],
+      [',UDA1','35','19','23.6465','S','58','36','58.8503','W','43.497','3560-24-4','Gobernador-Udaondo','-,'],
+      [',UDAO','35','18','8.3496','S','58','35','31.5655','W','43.551','3560-24-4','Gobernador-Udaondo','-,'],
+      [',UNLO','34','46','36.2945','S','58','27','20.4243','W','23.708','3557-13-1','Lanus','-,'],
+      [',UNRO','32','57','33.6706','S','60','37','42.3308','W','66.872','-','-','Est.-Permanente,'],
+      [',URDA','36','26','33.4903','S','61','26','12.6772','W','125.111','3760-7-1','Urdampilleta','-,'],
+      [',VBCA','38','42','2.7655','S','62','16','9.2176','W','59.479','-','Bahia-Blanca','Est.-Permanente,'],
+      [',VCON','33','13','41.0261','S','60','19','47.7617','W','62.297','-','Villa-Constitucion-(Santa-Fe)-','Est.-Permanente,'],
+      [',VED1','34','26','38.2016','S','61','29','44.4445','W','103.246','3560-7-1','Ea.-Fortin-Acha','-,'],
+      [',VEDI','34','28','18.3144','S','61','30','54.0563','W','105.729','3563-12-2','Vedia','-,'],
+      [',VGE1','37','14','4.1152','S','57','0','46.5578','W','20.460','3757-21-4','Est.-Macedo','-,'],
+      [',VGES','37','19','31.2347','S','57','8','4.6378','W','20.159','3757-21-4','Est.-Macedo','-,'],
+      [',VIL1','35','2','54.0515','S','63','6','42.1781','W','134.955','3563-21-2','General-Villegas','-,'],
+      [',VILL','35','2','38.6346','S','63','2','15.5180','W','133.558','3563-21-2','General-Villegas','-,'],
+      [',VINI','38','40','2.0147','S','62','14','2.5562','W','71.871','3963-17-2','Base-Aer.-Comandante-Espora','-,'],
+      [',VIR1','38','9','45.2249','S','63','16','2.1020','W','198.419','3963-3-1','Jacinto-Araoz','-,'],
+      [',VIRI','38','8','18.7123','S','63','17','49.2684','W','188.482','3963-3-1','Jacinto-Araoz','-,'],
+      [',VIVO','37','41','39.7115','S','57','39','33.0609','W','41.787','3757-32-2','Cobo','-,'],
+      [',ZAR1','34','3','14.3219','S','59','18','37.3623','W','31.822','3560-5-1','Villa-Lia','-,'],
+      [',ZARA','34','5','35.8858','S','59','10','16.5671','W','41.706','3560-5-2','Zarate','-,']];
+    }
+
+    var markers = [
+      [8.4, 49.0, 'Cities2'],
+      [8.4, 49.0, 'Cities1'],
+      [6.2, 48.7, 'Cities1'],
+      [2.5, 48.9, 'Cities2'],
+      [-1.4, 50.9, 'Cities2'],
+      [6.6, 51.8, 'Cities3'],
+      [8.6, 49.4, 'Cities3'],
+      [11.6, 48.1, 'Cities3']
+    ];
+
+    // Agrego marcador de la coordenada actual
+    // markers.push([position.coords.longitude , position.coords.latitude, 'Cities2']);
+
+    // Print coordenada actual
+    // xx.innerHTML = "Latitude: " + position.coords.latitude +
+    // "<br>Longitude: " + position.coords.longitude;
+
+
+    if (coor === "coor_mapa") {
+      console.log('Lat3 ' + lat_mapa);
+      lat =  lat_mapa;
+      lon =  lon_mapa;
+    } else {
+      lat =  position.coords.latitude;
+      lon =  position.coords.longitude;
+    }
+
+    const est_name = [];
+    const est_lat = [];
+    const est_lon = [];
+
+    for (var i = 0; i < estaciones.length-1; i++) {
+
+      var eslatgra = Number(estaciones[i][1]) + Number(estaciones[i][2])/60
+      + Number(estaciones[i][3])/3600;
+      var eslongra = Number(estaciones[i][5]) + Number(estaciones[i][6])/60
+      + Number(estaciones[i][7])/3600;
+
+      est_name.push(estaciones[i][0]);  //nota: reemplazar pushs por indexaciones para prevenir errores de shifteo
+      est_lat.push(eslatgra);
+      est_lon.push(eslongra);
+      markers.push([-eslongra, -eslatgra, 'Cities3']);
+    }
+
+    const dist_list = [];
+
+    for (var i = 0; i < estaciones.length-1; i++) {
+
+      var dlat = ( Math.abs(Number(est_lat[i]))-Math.abs(Number(lat)) ) * (2*Math.PI / 360) ;
+      var dlon = ( Math.abs(Number(est_lon[i]))-Math.abs(Number(lon)) ) * (2*Math.PI / 360) ;
+
+      var a = Math.sin(dlat/2)**2 + Math.cos(est_lat[i] * (2*Math.PI / 360)) * Math.cos(lat * (2*Math.PI / 360)) * Math.sin(dlon/2)**2 ;
+      var c = 2 * Math.asin(Math.sqrt(a)) ;
+      var distancia = 6371 * c ; // Radio Tierra 6371 km. Distancia en Km
+      dist_list.push(distancia);
+
+    }
+
+    var min_val = Math.min(...dist_list)
+    var min_index = dist_list.indexOf(min_val);
+
+
+
+
+    // Print datos de estacion y tiempos  #a7c16070 verde arba
+
+
+    if (coor === "coor_mapa") {
+      var datos_estacion_str =
+      '<b>Estación permanente más cercana:  </b><br />' +
+       estaciones[min_index][0] + "<br /><br />" +
+
+      '<b>Distancia a ' + estaciones[min_index][0] + ':  </b>' +
+       min_val.toFixed(2) + ' km.';
+    } else {
+      var datos_estacion_str =
+      '<br />' + '<b>Coordenadas de tu dispositivo:   </b><br />'+
+      lat +' , '+lon+ " <br /><br />" +
+
+      '<b>Estación permanente más cercana:  </b><br />' +
+       estaciones[min_index][0] + "<br /><br />" +
+
+      '<b>Distancia a ' + estaciones[min_index][0] + ':  </b>' +
+       min_val.toFixed(2) + ' km.';
+    }
+
+
+
+    if (min_val < 30) {
+      datos_estacion_str += "<br /><br />" +'<b>Tiempo de medición necesario para punto Base:</b>  60 min.';
+    } else if (min_val < 80) {
+      datos_estacion_str += "<br /><br />" +'<b>Tiempo de medición necesario para punto Base:</b>  90 min.';
+    } else if (min_val < 150) {
+      datos_estacion_str += "<br /><br />" +'<b>Tiempo de medición necesario para punto Base:</b>  120 min.';
+    } else if (min_val < 200) {
+      datos_estacion_str += "<br /><br />" +'<b>Tiempo de medición necesario para punto Base:</b>  180 min.';
+    } else {
+      datos_estacion_str += " ";
+    }
+
+
+
+    datos_estacion_str += "<br /><br />" + '<b>Tiempo de medición necesario para punto Azimuth:</b>  30 min.'
+    if (min_val < 5) {
+      datos_estacion_str += "<br /><br />" +'Puede vincularse el punto Azimuth directamente a '+estaciones[min_index][0]+' por estar a menos de 5km.';
+    }
+
+
+    if (puntos=='geoba_gps'){
+      datos_estacion_str += "<br /><br />" +
+      '<b>Verificá el estado de la estación '+estaciones[min_index][0]+' hacienco clic </b>' +
+      '<a href="https://www.ign.gob.ar/NuestrasActividades/Ramsac/EstacionesPermanentes"> aquí. </a>'
+    }
+
+
+
+
+    document.getElementById("datos_estacion").innerHTML = datos_estacion_str;
+
+
+
+
+    // -------------------------------------------------------------------------
+    // Mapa
+    //
+    // -------------------------------------------------------------------------
+    //
+    // epsg4326 = new OpenLayers.Projection("EPSG:4326")
+    //
+    // map = new OpenLayers.Map({
+    //   div: "mapdiv",
+    //   displayProjection: epsg4326   // With this setting, lat and lon are displayed correctly in MousePosition and permanent anchor
+    // });
+    //
+    // //   map = new OpenLayers.Map("mapdiv");
+    // map.addLayer(new OpenLayers.Layer.OSM());
+    // map.addLayer(new OpenLayers.Layer.OSM("Wikimedia",
+    //   ["https://maps.wikimedia.org/osm-intl/${z}/${x}/${y}.png"],
+    //   {
+    //     attribution: "&copy; <a href='http://www.openstreetmap.org/'>OpenStreetMap</a> and contributors, under an <a href='http://www.openstreetmap.org/copyright' title='ODbL'>open license</a>. <a href='https://www.mediawiki.org/wiki/Maps'>Wikimedia's new style (beta)</a>",
+    //     "tileOptions": { "crossOriginKeyword": null }
+    //   })
+    // );
+    // // See https://wiki.openstreetmap.org/wiki/Tile_servers for other OSM-based layers
+    //
+    // map.addControls([
+    //   new OpenLayers.Control.MousePosition(),
+    //   new OpenLayers.Control.ScaleLine(),
+    //   new OpenLayers.Control.LayerSwitcher(),
+    //   new OpenLayers.Control.Permalink({ anchor: true })
+    // ]);
+    //
+    // projectTo = map.getProjectionObject(); //The map projection (Spherical Mercator)
+    // var lonLat = new OpenLayers.LonLat(-60.3569312 , -36.7110272).transform(epsg4326, projectTo);
+    // var zoom = 5;
+    // if (!map.getCenter()) {
+    //   map.setCenter(lonLat, zoom);
+    // }
+    //
+    // var colorList = ["red", "blue", "black"];
+    // var layerName = [markers[0][2]];
+    // var styleArray = [new OpenLayers.StyleMap({ pointRadius: 6, fillColor: colorList[0], fillOpacity: 0.5 })];
+    // var vectorLayer = [new OpenLayers.Layer.Vector(layerName[0], { styleMap: styleArray[0] })];		// First element defines first Layer
+    //
+    // var j = 0;
+    // for (var i = 1; i < markers.length; i++) {
+    //   if (!layerName.includes(markers[i][2])) {
+    //     j++;
+    //     layerName.push(markers[i][2]);															// If new layer name found it is created
+    //     styleArray.push(new OpenLayers.StyleMap({ pointRadius: 6, fillColor: colorList[j % colorList.length], fillOpacity: 0.5 }));
+    //     vectorLayer.push(new OpenLayers.Layer.Vector(layerName[j], { styleMap: styleArray[j] }));
+    //   }
+    // }
+    //
+    // //Loop through the markers array
+    // for (var i = 0; i < markers.length; i++) {
+    //   var lon = markers[i][0];
+    //   var lat = markers[i][1];
+    //   var feature = new OpenLayers.Feature.Vector(
+    //     new OpenLayers.Geometry.Point(lon, lat).transform(epsg4326, projectTo),
+    //     { description: "marker number " + i }
+    //     // see http://dev.openlayers.org/docs/files/OpenLayers/Feature/Vector-js.html#OpenLayers.Feature.Vector.Constants for more options
+    //   );
+    //   vectorLayer[layerName.indexOf(markers[i][2])].addFeatures(feature);
+    // }
+    //
+    // for (var i = 0; i < layerName.length; i++) {
+    //   map.addLayer(vectorLayer[i]);
+    // }
+    // }
+
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoicGFibG8xMjMzMjEiLCJhIjoiY2t4bnU2YnI5MGU3bjJ2cXV1YmhrbHA3cyJ9.-5XwO7zn-tEsWckebwkFgQ';
+
+    const geojson = {
+      'type': 'FeatureCollection',
+      'features': [
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [lon , lat]
+          },
+          'properties': {
+            'title': 'Tu Ubicación',
+            'description': ' '
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-est_lon[min_index] , -est_lat[min_index]]
+          },
+          'properties': {
+            'title': estaciones[min_index][0],
+            'description': 'Punto más cercano'
+          }
+        }
+      ]
+    };
+
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      // streets-v11  navigation-day-v1 light-v10 outdoors-v11
+      center: [-est_lon[min_index] , -est_lat[min_index]],
+
+      zoom: 13-6*min_val/200
+    });
+
+    // add markers to map
+    for (const feature of geojson.features) {
+      // create a HTML element for each feature
+      const el = document.createElement('div');
+      el.className = 'marker';
+
+      // make a marker for each feature and add it to the map
+      new mapboxgl.Marker(el)
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(
+          new mapboxgl.Popup({ offset: 25 }) // add popups
+            .setHTML(
+              `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+            )
+        )
+        .addTo(map);
+    }
+
+    const marker_red = new mapboxgl.Marker({ color: 'black', rotation: 0 })
+    .setLngLat([-est_lon[min_index] , -est_lat[min_index]])
+    .addTo(map);
+    const marker_vin = new mapboxgl.Marker({ color: 'black', rotation: 0 })
+    .setLngLat([lon , lat])
+    .addTo(map);
+
+    // Ocultar boton
+    // document.getElementById("button").style.display = "none";
+
+    if (coor === "coor_mapa") {
+      document.getElementById("bus_y_map0").style.display = "none";
+    } else {
+      document.getElementById("coor_bus_y_map0").style.display = "none";
+      // document.getElementById("resultado").style.display = "block";
+    }
+    document.getElementById("bloque1").style.display = "none";
+    document.getElementById("btn_volver").style.display = "block";
+
+
+
+
+
+
+
+
+
+    // San Francisco
+    const origin = [lon , lat];
+
+    // Washington DC
+    const destination = [-est_lon[min_index] , -est_lat[min_index]];
+
+    // A simple line from origin to destination.
+    const route = {
+    'type': 'FeatureCollection',
+    'features': [
+    {
+    'type': 'Feature',
+    'geometry': {
+    'type': 'LineString',
+    'coordinates': [origin, destination]
+    }
+    }
+    ]
+    };
+
+    // A single point that animates along the route.
+    // Coordinates are initially set to origin.
+    const point = {
+    'type': 'FeatureCollection',
+    'features': [
+    {
+    'type': 'Feature',
+    'properties': {},
+    'geometry': {
+    'type': 'Point',
+    'coordinates': origin
+    }
+    }
+    ]
+    };
+
+    // Calculate the distance in kilometers between route start/end point.
+    const lineDistance = turf.length(route.features[0]);
+
+    const arc = [];
+
+    // Number of steps to use in the arc and animation, more steps means
+    // a smoother arc and animation, but too many steps will result in a
+    // low frame rate
+    const steps = 500;
+
+    // Draw an arc between the `origin` & `destination` of the two points
+    for (let i = 0; i < lineDistance; i += lineDistance / steps) {
+    const segment = turf.along(route.features[0], i);
+    arc.push(segment.geometry.coordinates);
+    }
+
+    // Update the route with calculated arc coordinates
+    route.features[0].geometry.coordinates = arc;
+
+    // Used to increment the value of the point measurement against the route.
+    let counter = 0;
+
+    map.on('load', () => {
+    // Add a source and layer displaying a point which will be animated in a circle.
+    map.addSource('route', {
+    'type': 'geojson',
+    'data': route
+    });
+
+    map.addSource('point', {
+    'type': 'geojson',
+    'data': point
+    });
+
+    map.addLayer({
+    'id': 'route',
+    'source': 'route',
+    'type': 'line',
+    'paint': {
+    'line-width': 2,
+    'line-color': '#6ba5d1'
+    }
+    });
+
+    map.addLayer({
+    'id': 'point',
+    'source': 'point',
+    'type': 'symbol',
+    'layout': {
+    // This icon is a part of the Mapbox Streets style.
+    // To view all images available in a Mapbox style, open
+    // the style in Mapbox Studio and click the "Images" tab.
+    // To add a new image to the style at runtime see
+    // https://docs.mapbox.com/mapbox-gl-js/example/add-image/
+    'icon-image': '',
+    'icon-rotate': ['get', 'bearing'],
+    'icon-rotation-alignment': 'map',
+    'icon-allow-overlap': true,
+    'icon-ignore-placement': true
+    }
+    });
+
+    function animate() {
+    const start =
+    route.features[0].geometry.coordinates[
+    counter >= steps ? counter - 1 : counter
+    ];
+    const end =
+    route.features[0].geometry.coordinates[
+    counter >= steps ? counter : counter + 1
+    ];
+    if (!start || !end) return;
+
+    // Update point geometry to a new position based on counter denoting
+    // the index to access the arc
+    point.features[0].geometry.coordinates =
+    route.features[0].geometry.coordinates[counter];
+
+    // Calculate the bearing to ensure the icon is rotated to match the route arc
+    // The bearing is calculated between the current point and the next point, except
+    // at the end of the arc, which uses the previous point and the current point
+    point.features[0].properties.bearing = turf.bearing(
+    turf.point(start),
+    turf.point(end)
+    );
+
+    // Update the source with this new data
+    map.getSource('point').setData(point);
+
+    // Request the next frame of animation as long as the end has not been reached
+    if (counter < steps) {
+    requestAnimationFrame(animate);
+    }
+
+    counter = counter + 1;
+    }
+
+    document.getElementById('replay').addEventListener('click', () => {
+    // Set the coordinates of the original point back to origin
+    point.features[0].geometry.coordinates = origin;
+
+    // Update the source layer
+    map.getSource('point').setData(point);
+
+    // Reset the counter
+    counter = 0;
+
+    // Restart the animation
+    animate(counter);
+    });
+
+    // Start the animation
+    animate(counter);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+}
+
+
+</script>
+
+
+<script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+
+
+
+
+</body>
+</html>
