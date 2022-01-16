@@ -38,7 +38,7 @@
   }
 
 
-  #titulo {font-size: 74px;}
+  #titulo {font-size: 72px;}
 
   .btn {
     border: none;
@@ -47,7 +47,7 @@
     background-color: #fff;
     cursor: pointer;
     margin: 0px 0px 10px 0px; /* top right bottom left */
-    font-size: 17px;
+    font-size: 21px;
     cursor: pointer;
     box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.8);
     color: rgba(0,0,0,1);
@@ -68,7 +68,7 @@
     background-color: #fff;
     cursor: pointer;
     margin: 0px 0px 10px 0px; /* top right bottom left */
-    font-size: 20px;
+    font-size: 21px;
     cursor: pointer;
     box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.8);
     color: rgba(0,0,0,1);
@@ -89,7 +89,7 @@
     background-color: #fff;
     cursor: pointer;
     margin: 0px 0px 10px 0px; /* top right bottom left */
-    font-size: 20px;
+    font-size: 21px;
     cursor: pointer;
     box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.8);
     color: rgba(0,0,0,1);
@@ -156,7 +156,7 @@
 <div id="bloque1">
 <div id="sub"> <a> Encontrá el punto de la red Geoba más cercano y el tiempo necesario para su vinculación. </a> </div>
 
-<br>
+
 <br>
 
 <!-- <a><b>Objetivo de vinculación: </b></a> -->
@@ -204,7 +204,7 @@
 </form> -->
 
 
-<br>
+<!-- <br> -->
 
 
 <!-- <img src='ramsac.png' width=90%> -->
@@ -251,7 +251,7 @@
 </div>
 
 
-<div style="font-size: 12px">
+<div style="font-size: 11px;margin: 0px 0px 4px 0px;">
 
   <br>
   <br>
@@ -309,7 +309,7 @@ function dispositivo(){
   coor = "coor_disp";
   getLocation()
   showPosition()
-  console.log("dispositivo seleccionado");
+  console.log("dispositivo seleccionado")
 }
 
 // function changeHiddenInput(objDropDown) {
@@ -435,7 +435,6 @@ map.on('click', function(e) {
 
     // marker2.setLngLat([lon_mapa, lat_mapa])
     // marker2.addTo(map);
-
     showPosition();
 });
 
@@ -1405,7 +1404,8 @@ function showPosition(position) {
 
 
 
-
+    element = document.getElementById("datos_estacion")
+    element.scrollIntoView();
 
 
 
