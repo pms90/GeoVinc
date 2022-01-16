@@ -168,16 +168,16 @@
 
 <!-- <a><b>Objetivo de vinculación: </b></a> -->
 <div id="botones2">
-<button class='btn2 active2' onclick="doble_frec()">Doble Frecuencia <br> L1 L2</button>
-<button class='btn2' onclick="simple_frec()">Simple Frecuencia <br> L1</button>
+<button class='btn2 active2' onclick="doble_frec()">Uso equipo <br> L1 L2</button>
+<button class='btn2' onclick="simple_frec()">Uso equipo <br> L1</button>
 </div>
 
 <br>
 
 <!-- <a><b>Objetivo de vinculación: </b></a> -->
 <div id="botones3">
-<button class='btn3 active3' onclick="mapa()">Ubicacion <br> en Mapa</button>
-<button class='btn3' onclick="dispositivo()">Ubicacion del <br> dispositivo</button>
+<button class='btn3 active3' onclick="mapa()">Elegir Ubicación <br> en el Mapa</button>
+<button class='btn3' onclick="dispositivo()">Usar ubicación del <br> dispositivo</button>
 </div>
 
 <!-- <form method="post">
@@ -213,7 +213,7 @@
 
 <div id='resultado'>
 
-  <a id="datos_estacion">
+  <!-- <a id="datos_estacion">
 
     <b>Coordenadas elegidas:
     <br><br>
@@ -226,6 +226,14 @@
     Tiempo punto Azimuth:
     <br><br>
     -</b>
+
+  </a> -->
+
+  <a id="datos_estacion">
+
+    <b>Elegí ubicación en el mapa para buscar punto más cercano
+
+    </b>
 
   </a>
 
@@ -293,13 +301,15 @@ function simple_frec(){
   console.log("simple_frec seleccionado");
 }
 
-var ubica = "mapa"
+var coor = "coor_mapa"
 function mapa(){
-  ubica = "mapa";
-  console.log("mapa seleccionado");
+  coor = "coor_mapa";
+  console.log("coor_mapa seleccionado");
 }
 function dispositivo(){
-  ubica = "dispositivo";
+  coor = "coor_disp";
+  getLocation()
+  showPosition()
   console.log("dispositivo seleccionado");
 }
 
@@ -892,8 +902,7 @@ function showPosition(position) {
        min_val.toFixed(2) + ' km.';
     } else {
       var datos_estacion_str =
-      '<br>' + '<b>Coordenadas de tu dispositivo:   </b>'+
-      lat +' , '+lon+ " <br><br>" +
+      '<b>Coordenadas de tu dispositivo: </b> ( ' + lon.toFixed(3) + ' , ' + lat.toFixed(3) +' )' + "<br><br>" +
 
       '<b>Punto más cercano:  </b>' +
        estaciones[min_index][0] + "<br><br>" +
@@ -904,13 +913,13 @@ function showPosition(position) {
 
 
     if (min_val < 30) {
-      datos_estacion_str += "<br><br>" +'<b>Tiempo punto Base:</b>  60 min.';
+      datos_estacion_str += "<br><br>" +'<b>Tiempo punto Base (L1 L2):</b>  60 min.';
     } else if (min_val < 80) {
-      datos_estacion_str += "<br><br>" +'<b>Tiempo punto Base:</b>  90 min.';
+      datos_estacion_str += "<br><br>" +'<b>Tiempo punto Base (L1 L2):</b>  90 min.';
     } else if (min_val < 150) {
-      datos_estacion_str += "<br><br>" +'<b>Tiempo punto Base:</b>  120 min.';
+      datos_estacion_str += "<br><br>" +'<b>Tiempo punto Base (L1 L2):</b>  120 min.';
     } else if (min_val < 200) {
-      datos_estacion_str += "<br><br>" +'<b>Tiempo punto Base:</b>  180 min.';
+      datos_estacion_str += "<br><br>" +'<b>Tiempo punto Base (L1 L2):</b>  180 min.';
     } else {
       datos_estacion_str += " ";
     }
