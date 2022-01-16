@@ -43,7 +43,7 @@
   .btn {
     border: none;
     outline: none;
-    padding: 17px 22px;
+    padding: 5px 15px;
     background-color: #fff;
     cursor: pointer;
     margin: 0px 0px 10px 0px; /* top right bottom left */
@@ -64,7 +64,7 @@
   .btn3 {
     border: none;
     outline: none;
-    padding: 17px 22px;
+    padding: 5px 15px;
     background-color: #fff;
     cursor: pointer;
     margin: 0px 0px 10px 0px; /* top right bottom left */
@@ -85,7 +85,7 @@
   .btn2 {
     border: none;
     outline: none;
-    padding: 17px 22px;
+    padding: 5px 15px;
     background-color: #fff;
     cursor: pointer;
     margin: 0px 0px 10px 0px; /* top right bottom left */
@@ -191,7 +191,7 @@
 <div id="result"> </div>
 
 
-<br>
+<!-- <br> -->
 
 <!-- <a><b>Coordenadas del punto a vincular: </b></a> -->
 <!-- <form method="post">
@@ -212,27 +212,12 @@
 
 <div id='resultado'>
 
-  <!-- <a id="datos_estacion">
 
-    <b>Coordenadas elegidas:
-    <br><br>
-    Punto más cercano:
-    <br><br>
-    Distancia :
-    <br><br>
-    Tiempo punto Base:
-    <br><br>
-    Tiempo punto Azimuth:
-    <br><br>
-    -</b>
-
-  </a> -->
+  <a id="marcador_estacion">
 
   <a id="datos_estacion">
 
-    <b>Elegí una ubicación en el mapa para buscar punto más cercano
-
-    </b>
+    <!-- <b>Elegí una ubicación en el mapa para buscar punto más cercano    </b> -->
 
   </a>
 
@@ -241,20 +226,18 @@
 
 <!-- <center><button class='btn' id='btn_volver' onclick="window.location.href = 'file:///C:/Users/bikel/Desktop/vinc-main/index.html';">Hacer otra busqueda</button></center> -->
 
-<br>
+
 
 <div id="map" style="margin:0 auto;"></div>
 
-<br>
-<br>
+
 
 </div>
 
 
-<div style="font-size: 11px;margin: 0px 0px 4px 0px;">
+<div style="font-size: 11px;margin: 6px 0px 6px 0px;">
 
-  <br>
-  <br>
+
 
   <a><center>Copyright © 2022 Pablo Manera (CC BY 4.0) </c></a>
   <a><center>pablo.manera@gmail.com</center></a>
@@ -891,7 +874,7 @@ function showPosition(position) {
     if (coor === "coor_mapa") {
       var datos_estacion_str =
 
-      '<b>Coordenadas elegidas: </b> (' + lon_mapa.toFixed(2) + ',' + lat_mapa.toFixed(2) +')' + "<br><br>" +
+      '<br><b>Coordenadas elegidas: </b> (' + lon_mapa.toFixed(2) + ',' + lat_mapa.toFixed(2) +')' + "<br><br>" +
 
       '<b>Punto más cercano:  </b>' +
        estaciones[min_index][0] + "<br><br>" +
@@ -948,7 +931,7 @@ function showPosition(position) {
       '<a href="https://www.ign.gob.ar/NuestrasActividades/Ramsac/EstacionesPermanentes"> aquí. </a>'
     }
 
-
+    datos_estacion_str += '<br>'
 
 
     document.getElementById("datos_estacion").innerHTML = datos_estacion_str;
@@ -1404,7 +1387,7 @@ function showPosition(position) {
 
 
 
-    element = document.getElementById("datos_estacion")
+    element = document.getElementById("marcador_estacion")
     element.scrollIntoView();
 
 
