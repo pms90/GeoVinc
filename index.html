@@ -31,7 +31,7 @@
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0.5em;
-    font-size: 125%;
+    font-size: 145%;
     line-height: 1.2;
     text-align:center;
   }
@@ -46,7 +46,7 @@
     background-color: #fff;
     cursor: pointer;
     margin: 0px 1px 2px 1px; /* top right bottom left */
-    font-size: 110%;
+    font-size: 125%;
     cursor: pointer;
     box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.8);
     color: rgba(0,0,0,0.6);
@@ -317,6 +317,35 @@ const map = new mapboxgl.Map({
 
 // var marker2 = new mapboxgl.Marker({ color: 'black', rotation: 0 })
 
+
+var marker_red = new mapboxgl.Marker({ color: 'black', rotation: 0 })
+.setLngLat([0 , 0])
+.addTo(map);
+var marker_vin = new mapboxgl.Marker({ color: 'black', rotation: 0 })
+.setLngLat([0 , 0])
+.addTo(map);
+
+
+// var positions =[
+//                 [0, 0],
+//                 [-10 , -10]
+//                ];
+//
+// var linestring = turf.lineString(positions);
+//
+// map.addLayer({
+//                 "id": "route",
+//                 "type": "line",
+//                 "source": {
+//                     "type": "geojson",
+//                     "data": linestring
+//                 },
+//                 "layout": {},
+//                 "paint":{},
+//             });
+
+
+
 map.on('click', function(e) {
     // The event object (e) contains information like the
     // coordinates of the point on the map that was clicked.
@@ -346,8 +375,7 @@ map.on('click', function(e) {
 
 
 
-
-
+var lonstr = 'nada'
 
 function showPosition(position) {
   if(lon_mapa=='' && coor === "coor_mapa"){
@@ -846,38 +874,39 @@ function showPosition(position) {
     // Reload map
     // =========================================================================
 
-    const map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11',
-      // streets-v11  navigation-day-v1 light-v10 outdoors-v11
-      // center: [-60.14598369672268 , -36.6236754895088],
-      center: [lon_mapa , lat_mapa],
-      zoom: 7,
-    });
+    // const map = new mapboxgl.Map({
+    //   container: 'map',
+    //   style: 'mapbox://styles/mapbox/streets-v11',
+    //   // streets-v11  navigation-day-v1 light-v10 outdoors-v11
+    //   // center: [-60.14598369672268 , -36.6236754895088],
+    //   center: [lon_mapa , lat_mapa],
+    //   zoom: 7,
+    // });
 
     // var marker2 = new mapboxgl.Marker({ color: 'black', rotation: 0 })
 
-    map.on('click', function(e) {
-        // The event object (e) contains information like the
-        // coordinates of the point on the map that was clicked.
-        console.log('A click event has occurred at ' + e.lngLat);
-        console.log('Lat ' + e.lngLat.lat);
-        lon_mapa = e.lngLat.lng
-        lat_mapa = e.lngLat.lat
-        // coor_elegida.innerHTML = '<b>Coordenadas elegidas: </b> ( ' + lon_mapa + ' , ' + lat_mapa +' )';
-
-        // new mapboxgl.Popup()
-        // .setLngLat(e.lngLat)
-        // .setHTML(e.lngLat)
-        // .addTo(map);
-
-        // marker2.remove();
-
-        // marker2.setLngLat([lon_mapa, lat_mapa])
-        // marker2.addTo(map);
-
-        showPosition();
-    });
+    // map.on('click', function(e) {
+    //     // The event object (e) contains information like the
+    //     // coordinates of the point on the map that was clicked.
+    //     console.log('A click event has occurred at ' + e.lngLat);
+    //     console.log('Lat ' + e.lngLat.lat);
+    //     lon_mapa = e.lngLat.lng
+    //     lat_mapa = e.lngLat.lat
+    //     // coor_elegida.innerHTML = '<b>Coordenadas elegidas: </b> ( ' + lon_mapa + ' , ' + lat_mapa +' )';
+    //
+    //     // new mapboxgl.Popup()
+    //     // .setLngLat(e.lngLat)
+    //     // .setHTML(e.lngLat)
+    //     // .addTo(map);
+    //
+    //     // marker2.remove();
+    //
+    //     // marker2.setLngLat([lon_mapa, lat_mapa])
+    //     // marker2.addTo(map);
+    //
+    //
+    //     showPosition();
+    // });
 
 
     const geojson = {
@@ -928,14 +957,31 @@ function showPosition(position) {
         .addTo(map);
     }
 
+    // const marker_red = new mapboxgl.Marker({ color: 'black', rotation: 0 })
+    // .setLngLat([0 , 0])
+    // .addTo(map);
+    // const marker_vin = new mapboxgl.Marker({ color: 'black', rotation: 0 })
+    // .setLngLat([0 , 0])
+    // .addTo(map);
+
+    // marker_red.remove();
+    // marker_vin.remove();
 
 
-    const marker_red = new mapboxgl.Marker({ color: 'black', rotation: 0 })
-    .setLngLat([-est_lon[min_index] , -est_lat[min_index]])
-    .addTo(map);
-    const marker_vin = new mapboxgl.Marker({ color: 'black', rotation: 0 })
-    .setLngLat([lon , lat])
-    .addTo(map);
+
+
+    // var marker_red = new mapboxgl.Marker({ color: 'black', rotation: 0 })
+    // // .setLngLat([0 , 0])
+    // // .addTo(map);
+    // var marker_vin = new mapboxgl.Marker({ color: 'black', rotation: 0 })
+    // .setLngLat([0 , 0])
+    // .addTo(map);
+
+    marker_red.setLngLat([-est_lon[min_index] , -est_lat[min_index]])
+    marker_red.addTo(map);
+
+    marker_vin.setLngLat([lon , lat])
+    marker_vin.addTo(map);
 
 
 
@@ -953,6 +999,155 @@ function showPosition(position) {
     // }
     // document.getElementById("bloque1").style.display = "none";
     // // document.getElementById("btn_volver").style.display = "block";
+
+
+
+
+
+
+
+
+
+
+
+
+    // map.addSource('route', {
+    // 'type': 'geojson',
+    // 'data': {
+    // 'type': 'Feature',
+    // 'properties': {},
+    // 'geometry': {
+    // 'type': 'LineString',
+    // 'coordinates': [
+    // [-60.840 , -38.311],
+    // [ -59.573 , -33.454],
+    // [-122.483396, 37.8327],
+    // [-122.493782, 37.833683]
+    // ]
+    // }
+    // }
+    // });
+    // map.addLayer({
+    // 'id': 'route',
+    // 'type': 'line',
+    // 'source': 'route',
+    // 'layout': {
+    // 'line-join': 'round',
+    // 'line-cap': 'round'
+    // },
+    // 'paint': {
+    // 'line-color': '#888',
+    // 'line-width': 8
+    // }
+    // });
+
+
+
+    // positions =[
+    //                 [-est_lon[min_index] , -est_lat[min_index]],
+    //                 [lon , lat]
+    //                ];
+    //
+    // linestring = turf.lineString(positions);
+
+    // map.on('load', function () {
+
+
+    // map.addLayer({
+    //                 "id": "route",
+    //                 "type": "line",
+    //                 "source": {
+    //                     "type": "geojson",
+    //                     "data": linestring
+    //                 },
+    //                 "layout": {},
+    //                 "paint":{},
+    //             });
+    //
+    // // });
+    //
+    // map.removeLayer("route")
+
+    // map.addLayer({
+    //                 "id": "route",
+    //                 "type": "line",
+    //                 "source": {
+    //                     "type": "geojson",
+    //                     "data": linestring
+    //                 },
+    //                 "layout": {},
+    //                 "paint":{},
+    //             });
+    //
+    // // });
+
+    positions =[
+                    [-est_lon[min_index] , -est_lat[min_index]],
+                    [lon , lat]
+                   ];
+
+     // map.addLayer(
+     //   {
+     //     'id': 'urban-areas-fill',
+     //     'type': 'fill',
+     //     'source': '',
+     //     'layout': {},
+     //     'paint': {
+     //     'fill-color': '#f08',
+     //     'fill-opacity': 0.4
+     //     }
+     //     // This is the important part of this example: the addLayer
+     //     // method takes 2 arguments: the layer as an object, and a string
+     //     // representing another layer's name. If the other layer
+     //     // exists in the style already, the new layer will be positioned
+     //     // right before that layer in the stack, making it possible to put
+     //     // 'overlays' anywhere in the layer stack.
+     //     // Insert the layer beneath the first symbol layer.
+     //   },
+     //
+     // );
+
+
+
+
+
+    // map.removeLayer("hola")
+
+    var mapLayer = map.getLayer(lonstr);
+
+    if(typeof mapLayer != 'undefined') {
+      // Remove map layer & source.
+      map.removeLayer(lonstr).removeSource(lonstr);
+    }
+
+    linestring = turf.lineString(positions);
+
+    lonstr = lon.toString(6);
+    map.addLayer({
+                    "id": lonstr,
+                    "type": "line",
+                    "source": {
+                        "type": "geojson",
+                        "data": linestring
+                    },
+                    "layout": {},
+                    "paint":{},
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
