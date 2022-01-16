@@ -29,13 +29,13 @@
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0.5em;
-    font-size: 96%;
+    font-size: 100%;
     line-height: 1.2;
     text-align:center;
   }
 
 
-  #titulo {font-size: 180%;}
+  #titulo {font-size: 250%;}
 
   .btn {
     display: "block";
@@ -240,7 +240,7 @@ map0.on('click', function(e) {
 
 <div id='resultado'>
 
-<p id="datos_estacion"></p>
+<a id="datos_estacion"></a>
 
 <br>
 
@@ -259,8 +259,8 @@ map0.on('click', function(e) {
 
 <div>
 
-  <p><center>Copyright © 2022 Pablo Manera (CC BY 4.0) </c></p>
-  <p><center>pablo.manera@gmail.com</center></p>
+  <a><center>Copyright © 2022 Pablo Manera (CC BY 4.0) </c></a>
+  <a><center>pablo.manera@gmail.com</center></a>
 </div>
 
 <!-- <div id="mapdiv"></div> -->
@@ -362,8 +362,6 @@ function changeHiddenInput2(objDropDown2) {
       getLocation();
     }
 }
-
-
 
 function showPosition(position) {
   if(lon_mapa=='' && coor === "coor_mapa"){
@@ -988,7 +986,7 @@ function showPosition(position) {
         .setPopup(
           new mapboxgl.Popup({ offset: 25 }) // add popups
             .setHTML(
-              `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+              `<h3>${feature.properties.title}</h3><a>${feature.properties.description}</a>`
             )
         )
         .addTo(map);
