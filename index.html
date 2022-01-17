@@ -50,7 +50,7 @@
     position: absolute;
     width: 100%;
     top: 0px;
-    background-color: rgba(251, 251, 251, 0.80);
+    background-color: rgba(251, 251, 251, 0.775);
   }
 
   .btn {
@@ -70,7 +70,7 @@
     cursor: pointer;
   }
   .btn.active {
-    background-color: #fffcef;
+    background-color: #fffae4;
     color: black;
   }
 
@@ -91,7 +91,7 @@
     cursor: pointer;
   }
   .btn3.active3 {
-    background-color: #fffcef;
+    background-color: #fffae4;
     color: black;
   }
 
@@ -112,7 +112,7 @@
     cursor: pointer;
   }
   .btn2.active2 {
-    background-color: #fffcef;
+    background-color: #fffae4;
     color: black;
   }
 
@@ -120,7 +120,7 @@
   /* segundo mapa */
 
   #map {
-    height: 1000px;
+    height: 1300px;
     /* width: 680px; */
     z-index: -1;
     /* position: absolute; */
@@ -397,7 +397,7 @@ const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/streets-v11',
   // streets-v11  navigation-day-v1 light-v10 outdoors-v11
-  center: [-60.32,-37.28+2.5],
+  center: [-60.32,-37.28+0],
   zoom: 5.18
 });
 
@@ -882,7 +882,7 @@ async function showPosition(position) {
 
 
     if (zoom_flag == 0) {
-      map.jumpTo({ 'center': [lon,lat+6], 'zoom': 5.18 });
+      map.jumpTo({ 'center': [lon,lat+3.75], 'zoom': 5.18 });
       zoom_flag = 1;
     }
 
