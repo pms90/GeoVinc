@@ -41,7 +41,7 @@
 
 
   #titulo {
-    font-size: 72px;
+    font-size: 62px;
   }
 
   #todo {
@@ -50,7 +50,7 @@
     position: absolute;
     width: 100%;
     top: 0px;
-    background-color: rgba(251, 251, 251, 0.825);
+    background-color: rgba(251, 251, 251, 0.80);
   }
 
   .btn {
@@ -120,7 +120,7 @@
   /* segundo mapa */
 
   #map {
-    height: 1500px;
+    height: 1000px;
     /* width: 680px; */
     z-index: -1;
     /* position: absolute; */
@@ -397,7 +397,7 @@ const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/streets-v11',
   // streets-v11  navigation-day-v1 light-v10 outdoors-v11
-  center: [-60.32,-37.28],
+  center: [-60.32,-37.28+2.5],
   zoom: 5.18
 });
 
@@ -882,7 +882,7 @@ async function showPosition(position) {
 
 
     if (zoom_flag == 0) {
-      map.jumpTo({ 'center': [lon,lat+1], 'zoom': 5.18 });
+      map.jumpTo({ 'center': [lon,lat+6], 'zoom': 5.18 });
       zoom_flag = 1;
     }
 
