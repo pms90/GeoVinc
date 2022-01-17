@@ -161,22 +161,22 @@
 
 <!-- <a><b>Objetivo de vinculación: </b></a> -->
 <div id="botones">
-<button class='btn active' onclick="puntos_geoba_gps()" style="width:48%">Solo estaciones <br> permanentes</button>
-<button class='btn' onclick="puntos_geoba_all()" style="width:48%">Cualquier punto <br> Geoba</button>
+<button class='btn active' onclick="puntos_geoba_gps()" style="width:45%">Solo estaciones <br> permanentes</button>
+<button class='btn' onclick="puntos_geoba_all()" style="width:45%">Cualquier punto <br> Geoba</button>
 </div>
 
 
 <!-- <a><b>Objetivo de vinculación: </b></a> -->
 <div id="botones2">
-<button class='btn2 active2' onclick="doble_frec()" style="width:48%">Uso equipo <br> L1 L2</button>
-<button class='btn2' onclick="simple_frec()" style="width:48%">Uso equipo <br> L1</button>
+<button class='btn2 active2' onclick="doble_frec()" style="width:45%">Uso equipo <br> L1 L2</button>
+<button class='btn2' onclick="simple_frec()" style="width:45%">Uso equipo <br> L1</button>
 </div>
 
 
 <!-- <a><b>Objetivo de vinculación: </b></a> -->
 <div id="botones3">
-<button class='btn3 active3' onclick="mapa()" style="width:48%">Elegir ubicación <br> en el mapa</button>
-<button class='btn3' onclick="dispositivo()" style="width:48%">Usar ubicación <br> del dispositivo</button>
+<button class='btn3 active3' onclick="mapa()" id="btn_mapa" style="width:45%">Elegir ubicación <br> en el mapa</button>
+<button class='btn3' onclick="dispositivo()" id="btn_disp" style="width:45%">Usar ubicación <br> del dispositivo</button>
 </div>
 
 <!-- <form method="post">
@@ -419,6 +419,7 @@ map.on('click', function(e) {
     // marker2.setLngLat([lon_mapa, lat_mapa])
     // marker2.addTo(map);
     showPosition();
+    
 });
 
 
@@ -1393,8 +1394,7 @@ function showPosition(position) {
 
 
 
-
-
+    // coor = "coor_mapa" // pasar de coor_disp a coor_mapa
 
 
 
@@ -1447,6 +1447,16 @@ for (var i = 0; i < btns3.length; i++) {
     current3[0].className = current3[0].className.replace(" active3", "");
     this.className += " active3";
   });
+}
+</script>
+
+<script>
+function volveramapa(){
+  document.getElementById("btn_disp").className = "btn3";
+  document.getElementById("btn_map").className = "btn3 active3";
+//   var botones3 = document.getElementById("botones3");
+//   var btns3 = botones3.getElementsByClassName("btn3 active3");
+//   btns3.className.replace(" active3", "");
 }
 </script>
 
